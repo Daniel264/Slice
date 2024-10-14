@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Head } from "@/utilities/header";
+import { Button } from "./Button";
 
 const Header = () => {
     return (
@@ -20,7 +21,7 @@ const Header = () => {
             </div>
             <div className="header-end">
                 <p>Contact us</p>
-                <button>Get this template</button>
+                <Button>Get this template</Button>
             </div>
         </div>
     );

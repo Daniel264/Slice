@@ -76,12 +76,6 @@
   align-items: center;
   gap: 9px;
 }
-.header-div .header-end button {
-  border-radius: 4.5rem;
-  background: #1a1a1a;
-  padding: 0.5rem 1rem;
-  color: white;
-}
 
 .yellow-container {
   display: flex;
