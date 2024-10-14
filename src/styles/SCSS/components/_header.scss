@@ -27,8 +27,8 @@ $text-3xl: 1.875rem;
             cursor: pointer;
             margin-right: calc(0.75rem /* 12px */ * var(--tw-space-x-reverse));
             margin-left: calc(0.75rem /* 12px */ * calc(1 - var(--tw-space-x-reverse)));
-            font-size: $text-lg;
-            font-weight: 600;
+        
+            font-weight: 500;
 
             @media screen and (min-width: 768px) {
                 margin-right: calc(0.75rem /* 12px */ * var(--tw-space-x-reverse));
@@ -36,7 +36,7 @@ $text-3xl: 1.875rem;
             }
 
             @media screen and (min-width: 1024px) {
-                font-size: $text-xl;
+                font-size: $text-2xl;
             }
 
             div {

@@ -40,18 +40,17 @@
   cursor: pointer;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
   margin-left: calc(0.75rem * (1 - var(--tw-space-x-reverse)));
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 500;
 }
-@media screen and (min-width > 768px) {
+@media screen and (min-width: 768px) {
   .header-div .header-middle ul {
     margin-right: calc(0.75rem * var(--tw-space-x-reverse));
     margin-left: calc(0.75rem * (1 - var(--tw-space-x-reverse)));
   }
 }
-@media screen and (min-width > 1024px) {
+@media screen and (min-width: 1024px) {
   .header-div .header-middle ul {
-    font-size: 1.1rem;
+    font-size: 1.35rem;
   }
 }
 .header-div .header-middle ul div li:hover {
