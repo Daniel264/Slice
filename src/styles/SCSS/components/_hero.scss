@@ -1,13 +1,12 @@
-@use '../variable/variable' as var;
+@use "../variable/variable" as var;
 
 .hero-section {
     display: flex;
 
     div:nth-of-type(1) {
         h1 {
-            font-size: var.$text-3xl;
+            font-size: var.$text-6xl;
             font-weight: 700;
-            color: var(--text-color);
         }
     }
 }
