@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import SEO from "@/components/SEO";
+import { YellowText } from "@/components/Yellow-text";
 
 export default function Home() {
     return (
@@ -11,6 +12,7 @@ export default function Home() {
 
                 {/* <h3 className="my-5 text-5xl font-semibold">Splice</h3> */}
                 <Header />
+                <YellowText />
             </main>
         </>
     );
