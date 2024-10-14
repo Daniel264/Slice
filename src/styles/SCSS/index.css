@@ -103,4 +103,9 @@
 
 .hero-section {
   display: flex;
+}
+.hero-section div:nth-of-type(1) h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--text-color);
 }/*# sourceMappingURL=index.css.map */
