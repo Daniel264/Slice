@@ -1,3 +1,7 @@
+import { works } from "@/utilities/yellow-text";
+import { YellowText } from "./Yellow-text";
+import Image from "next/image";
+
 export const HeroSection = () => {
     return (
         <section>
@@ -9,10 +13,12 @@ export const HeroSection = () => {
                 </h1>
 
                 <div>
-                   
+                    <YellowText array={works} />
                 </div>
             </div>
-            <div></div>
+            <div>
+                <Image src={"/assets/images/hero-img.svg"} alt={""} width={500} height={500} />
+            </div>
         </section>
     );
 };

@@ -1,6 +1,8 @@
 import Header from "@/components/Header";
+import { HeroSection } from "@/components/Hero-section";
 import SEO from "@/components/SEO";
-import { YellowText } from "@/components/Yellow-text";
+import { works } from "@/utilities/yellow-text";
+works;
 
 export default function Home() {
     return (
@@ -12,7 +14,7 @@ export default function Home() {
 
                 {/* <h3 className="my-5 text-5xl font-semibold">Splice</h3> */}
                 <Header />
-                <YellowText />
+                <HeroSection />
             </main>
         </>
     );
