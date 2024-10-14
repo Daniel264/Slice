@@ -83,14 +83,20 @@
   color: white;
 }
 
-.yellow-bg {
+.yellow-container {
+  display: flex;
+  flex-direction: column;
+}
+.yellow-container > *:not(:last-child) {
+  margin-bottom: 40px;
+}
+.yellow-container .yellow-bg {
   padding: 14px 20px;
   border-radius: 100%;
   background: var(--secondary-color);
   color: var(--primary-color);
   margin-right: 8px;
 }
-
-.yellow-text {
-  font-weight: 600;
+.yellow-container .yellow-text {
+  font-weight: 500;
 }/*# sourceMappingURL=index.css.map */

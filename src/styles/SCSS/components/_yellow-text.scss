@@ -1,5 +1,7 @@
-.yellow-background {
-    gap: 10px;
+@use "../mixins/mixins" as mix;
+
+.yellow-container {
+    @include mix.space-y(40px);
 
     .yellow-bg {
         padding: 14px 20px;
@@ -8,6 +10,7 @@
         color: var(--primary-color);
         margin-right: 8px;
     }
+
     .yellow-text {
         font-weight: 500;
     }

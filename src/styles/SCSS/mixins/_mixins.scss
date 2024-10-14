@@ -30,6 +30,7 @@
 }
 @mixin space-y($spacing) {
     display: flex;
+    flex-direction: column;
 
     > *:not(:last-child) {
         margin-bottom: $spacing;
