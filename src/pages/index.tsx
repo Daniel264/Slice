@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import { HeroSection } from "@/components/Hero-section";
+import { HeroSection } from "@/components/Hero-section-Template";
 import SEO from "@/components/SEO";
 import { works } from "@/utilities/yellow-text";
 works;
