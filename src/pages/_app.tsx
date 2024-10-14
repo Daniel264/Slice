@@ -1,5 +1,5 @@
 import React from "react";
-import "@/styles/globals.css";
+import "@/styles/SCSS/index.css";
 import { ToastContainer } from "react-toastify";
 import { NextRouter, useRouter } from "next/router";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";

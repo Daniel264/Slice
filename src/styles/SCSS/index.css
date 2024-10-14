@@ -1,0 +1,20 @@
+/* Tailwind Setup */
+@import url("react-toastify/dist/ReactToastify.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Library CSS import */
+@layer base {
+  /* Specify default font below */
+  html {
+    font-family: "DM Sans", sans-serif;
+  }
+  /* Daisy UI Resets */
+  /* =========================== */
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+  }
+  /* =========================== */
+}/*# sourceMappingURL=index.css.map */
