@@ -30,12 +30,12 @@ $text-3xl: 1.875rem;
             font-size: $text-lg;
             font-weight: 600;
 
-            @media screen and (min-width > 768px) {
+            @media screen and (min-width: 768px) {
                 margin-right: calc(0.75rem /* 12px */ * var(--tw-space-x-reverse));
                 margin-left: calc(0.75rem /* 12px */ * calc(1 - var(--tw-space-x-reverse)));
             }
 
-            @media screen and (min-width > 1024px) {
+            @media screen and (min-width: 1024px) {
                 font-size: $text-xl;
             }
 
