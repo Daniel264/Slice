@@ -25,9 +25,8 @@ $text-3xl: 1.875rem;
         ul {
             display: flex;
             cursor: pointer;
-            margin-right: calc(0.75rem /* 12px */ * var(--tw-space-x-reverse));
-            margin-left: calc(0.75rem /* 12px */ * calc(1 - var(--tw-space-x-reverse)));
-        
+            gap: 15px;
+            font-size: $text-xl;
             font-weight: 500;
 
             @media screen and (min-width: 768px) {
@@ -38,6 +37,7 @@ $text-3xl: 1.875rem;
             @media screen and (min-width: 1024px) {
                 font-size: $text-2xl;
             }
+            //737373
 
             div {
                 li {

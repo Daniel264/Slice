@@ -18,6 +18,14 @@
   }
   /* =========================== */
 }
+:root {
+  --primary-color: #000;
+  --secondary-color: #F9CF01;
+  --accent-color: #e74c3c;
+  --text-color: #737373;
+  --background-color: #fff;
+}
+
 .header-div {
   display: flex;
   height: -moz-fit-content;
@@ -38,8 +46,8 @@
 .header-div .header-middle ul {
   display: flex;
   cursor: pointer;
-  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.75rem * (1 - var(--tw-space-x-reverse)));
+  gap: 15px;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 @media screen and (min-width: 768px) {
