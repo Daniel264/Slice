@@ -18,8 +18,14 @@ const Header = () => {
                     ))}
                 </ul>
             </div>
+            <div>
+                <p>Contact us</p>
+                <button className="rounded-lg bg-[#1A1A1A] px-4 py-2 text-white">Get this template</button>
+            </div>
         </div>
     );
 };
 
 export default Header;
+
+//737373
