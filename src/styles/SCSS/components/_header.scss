@@ -40,7 +40,6 @@ $text-3xl: 1.875rem;
             @media screen and (min-width: 1024px) {
                 font-size: $text-2xl;
             }
-            //737373
 
             div {
                 li {
@@ -56,7 +55,7 @@ $text-3xl: 1.875rem;
         @include align-center(fit-content, fit-content, row);
         gap: 9px;
         button {
-            border-radius: 0.5rem;
+            border-radius: 4.5rem;
             background: #1a1a1a;
             padding: 0.5rem 1rem;
             color: white;
