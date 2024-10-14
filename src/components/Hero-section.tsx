@@ -17,7 +17,7 @@ export const HeroSection = () => {
                     <YellowText array={works} />
                 </div>
                 <div>
-                    <Button />
+                    <Button>Get started</Button>
                 </div>
             </div>
             <div>
