@@ -13,7 +13,7 @@ export const HeroSection = () => {
                         income, without <br />
                         owning a house
                     </h1>
-                    <Image src={"/assets/images/round-text.svg"} alt={""} width={230} height={100} />
+                    <Image src={"/assets/images/round-text.svg"} alt={""} width={280} height={100} />
                 </div>
 
                 <div>
