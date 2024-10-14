@@ -3,6 +3,8 @@ $text-xl: 1.1rem;
 $text-2xl: 1.35rem;
 $text-3xl: 1.875rem;
 
+@use "../mixins/mixins" as *;
+
 .header-div {
     display: flex;
     height: fit-content;
@@ -51,7 +53,7 @@ $text-3xl: 1.875rem;
     }
 
     .header-end {
-        display: flex;
+        @include align-center(fit-content, fit-content, row);
         gap: 9px;
         button {
             border-radius: 0.5rem;
