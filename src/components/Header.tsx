@@ -10,7 +10,7 @@ const Header = () => {
                 <Image src={"/assets/images/logo.svg"} alt={""} width={50} height={50} />
             </div>
             <div>
-                <ul className="flex cursor-pointer space-x-3 text-lg font-medium ">
+                <ul className="flex cursor-pointer space-x-3 text-lg font-medium md:space-x-6 lg:text-xl ">
                     {Head.map((item, index) => (
                         <div key={index}>
                             <li className="hover:text-[#888]">{item.name}</li>
