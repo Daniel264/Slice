@@ -4,7 +4,7 @@ import { benefits } from "@/utilities/yellow-text";
 
 export const YellowText = () => {
     return (
-        <div>
+        <div className="yellow-container">
             {tickText.map((item: { id: number; text: string }, id: number) => (
                 <div key={id}>
                     <span className="yellow-bg">{item.id}</span>
