@@ -7,11 +7,14 @@ export const HeroSection = () => {
     return (
         <section className="hero-section">
             <div>
-                <h1>
-                    Get Real Estate <br />
-                    income, without <br />
-                    owning a house
-                </h1>
+                <div>
+                    <h1>
+                        Get Real Estate <br />
+                        income, without <br />
+                        owning a house
+                    </h1>
+                    <Image src={"/assets/images/round-text.svg"} alt={""} width={230} height={100} />
+                </div>
 
                 <div>
                     <YellowText array={works} />
@@ -21,7 +24,7 @@ export const HeroSection = () => {
                 </div>
             </div>
             <div>
-                <Image src={"/assets/images/hero-img.svg"} alt={""} width={500} height={500} />
+                <Image src={"/assets/images/hero-img.svg"} alt={""} width={580} height={500} />
             </div>
         </section>
     );
