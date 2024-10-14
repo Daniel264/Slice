@@ -26,8 +26,9 @@ $text-3xl: 1.875rem;
             display: flex;
             cursor: pointer;
             gap: 15px;
-            font-size: $text-xl;
+            font-size: $text-lg;
             font-weight: 500;
+            color: var(--text-color);
 
             @media screen and (min-width: 768px) {
                 margin-right: calc(0.75rem /* 12px */ * var(--tw-space-x-reverse));
@@ -50,6 +51,8 @@ $text-3xl: 1.875rem;
     }
 
     .header-end {
+        display: flex;
+        gap: 9px;
         button {
             border-radius: 0.5rem;
             background: #1a1a1a;

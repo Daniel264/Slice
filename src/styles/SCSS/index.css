@@ -47,8 +47,9 @@
   display: flex;
   cursor: pointer;
   gap: 15px;
-  font-size: 1.1rem;
+  font-size: 0.85rem;
   font-weight: 500;
+  color: var(--text-color);
 }
 @media screen and (min-width: 768px) {
   .header-div .header-middle ul {
@@ -63,6 +64,10 @@
 }
 .header-div .header-middle ul div li:hover {
   color: #888;
+}
+.header-div .header-end {
+  display: flex;
+  gap: 9px;
 }
 .header-div .header-end button {
   border-radius: 0.5rem;
