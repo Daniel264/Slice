@@ -1,0 +1,22 @@
+@mixin button-style($bg-color, $text-color: white, $padding: 1rem) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: $padding;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: darken($bg-color, 10%);
+    }
+}
+
+@mixin align-center($height, $flex-direction) {
+    width: 100%;
+    height: $height;
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: center;
+    align-items: center;
+}
