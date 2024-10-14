@@ -1,5 +1,5 @@
 @use "../variable/variable" as var;
-@use '../mixins/mixins' as *;
+@use "../mixins/mixins" as *;
 
 .hero-section {
     display: flex;
@@ -10,6 +10,10 @@
         h1 {
             font-size: var.$text-6xl;
             font-weight: 600;
+        }
+
+        div:nth-of-type(3) {
+            padding-bottom: 3rem;
         }
     }
 }
