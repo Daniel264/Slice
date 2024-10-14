@@ -103,8 +103,22 @@
 
 .hero-section {
   display: flex;
+  gap: 5rem;
 }
 .hero-section div:nth-of-type(1) h1 {
   font-size: 4rem;
-  font-weight: 700;
+  font-weight: 600;
+}
+
+.butn {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.butn:hover {
+  background-color: black;
 }/*# sourceMappingURL=index.css.map */

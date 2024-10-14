@@ -3,6 +3,7 @@ import "@/styles/SCSS/index.css";
 import { ToastContainer } from "react-toastify";
 import { NextRouter, useRouter } from "next/router";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import Manrope from 'next/font'
 import { MutationCache, QueryCache, QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import type { AppProps } from "next/app";

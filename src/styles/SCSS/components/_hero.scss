@@ -1,12 +1,15 @@
 @use "../variable/variable" as var;
+@use '../mixins/mixins' as *;
 
 .hero-section {
     display: flex;
+    gap: 5rem;
 
     div:nth-of-type(1) {
+        // @include align-center(fit-content, fit-content, row);
         h1 {
             font-size: var.$text-6xl;
-            font-weight: 700;
+            font-weight: 600;
         }
     }
 }
