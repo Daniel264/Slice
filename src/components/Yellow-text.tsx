@@ -18,3 +18,4 @@ export const YellowText = ({array}: TextProps) => {
         </div>
     );
 };
+
