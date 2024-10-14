@@ -1,11 +1,5 @@
-
 // interface Props = {
-//     name: 
+//     name:
 // }
 
-export const Head = [
-    {name: "Features"}, 
-    {name: 'Blog'},
-    {name: 'About'},
-    {name: 'Blog'}
-]
+export const Head = [{ name: "How it works" }, { name: "Simulator" }, { name: "Benefits" }, { name: "Features" }, { name: "FAQs" }];
