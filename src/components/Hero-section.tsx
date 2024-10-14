@@ -1,6 +1,7 @@
 import { works } from "@/utilities/yellow-text";
 import { YellowText } from "./Yellow-text";
 import Image from "next/image";
+import { Button } from "./Button";
 
 export const HeroSection = () => {
     return (
@@ -14,6 +15,9 @@ export const HeroSection = () => {
 
                 <div>
                     <YellowText array={works} />
+                </div>
+                <div>
+                    <Button />
                 </div>
             </div>
             <div>
