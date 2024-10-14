@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const HeroSection = () => {
     return (
-        <section>
+        <section className="hero-section">
             <div>
                 <h1>
                     Get Real Estate <br />

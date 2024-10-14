@@ -99,4 +99,8 @@
 }
 .yellow-container .yellow-text {
   font-weight: 500;
+}
+
+.hero-section {
+  display: flex;
 }/*# sourceMappingURL=index.css.map */
