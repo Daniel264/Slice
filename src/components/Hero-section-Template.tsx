@@ -7,7 +7,7 @@ interface HeroProps {
     flexDirection: string;
 }
 
-export const HeroSection = ({ flexDirection }: HeroProps) => {
+export const HeroSection = ({ flexDirection = 'row' }: HeroProps) => {
     return (
         <section className={`hero-section ${flexDirection === "row-reverse" ? "flex-row-reverse" : "flex-row"}`}>
             <div>

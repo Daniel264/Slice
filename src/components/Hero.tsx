@@ -1,12 +1,12 @@
-import { HeroSection } from "./Hero-section-Template"
+// import { HeroSection } from "./Hero-section-Template"
 
 
-export const Hero = () => {
-    return (
-        <div>
-            <HeroSection />
-            <HeroSection />
+// export const Hero = () => {
+//     return (
+//         <div>
+//             <HeroSection />
+//             <HeroSection />
 
-        </div>
-    )
-}
+//         </div>
+//     )
+// }
