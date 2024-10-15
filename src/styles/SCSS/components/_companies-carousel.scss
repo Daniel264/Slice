@@ -1,6 +1,8 @@
 @use "../variable/variable" as var;
+@use "../mixins//mixins" as *;
 
 .companies-description {
+    @include space-y(3rem);
     h3 {
         font-size: var.$text-2xl;
         font-weight: 500;
@@ -8,8 +10,10 @@
 
     div:nth-of-type(1) {
         display: flex;
+        gap: 4.6rem;
     }
     div:nth-of-type(2) {
+        gap: 4.6rem;
         display: flex;
     }
 }

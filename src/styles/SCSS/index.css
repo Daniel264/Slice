@@ -32,11 +32,12 @@ h1 {
 
 .header-div {
   display: flex;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 4.2rem;
   width: 100%;
+  align-items: center;
   justify-content: space-between;
-  padding: 1.25rem 1rem;
+  padding: 0.25rem 1rem;
+  margin-bottom: 1.3rem;
   border-bottom: 1px solid var(--text-color);
 }
 .header-div .header-logo {
@@ -55,6 +56,16 @@ h1 {
 .header-div .header-logo .logo-text {
   font-weight: 700;
   font-size: 1.875rem;
+}
+.header-div .header-middle {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .header-div .header-middle ul {
   display: flex;
@@ -138,14 +149,23 @@ h1 {
   background: #777;
 }
 
+.companies-description {
+  display: flex;
+  flex-direction: column;
+}
+.companies-description > *:not(:last-child) {
+  margin-bottom: 3rem;
+}
 .companies-description h3 {
   font-size: 1.35rem;
   font-weight: 500;
 }
 .companies-description div:nth-of-type(1) {
   display: flex;
+  gap: 4.6rem;
 }
 .companies-description div:nth-of-type(2) {
+  gap: 4.6rem;
   display: flex;
 }
 

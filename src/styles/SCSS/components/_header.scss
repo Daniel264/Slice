@@ -3,10 +3,13 @@
 
 .header-div {
     display: flex;
-    height: fit-content;
+    height: 4.2rem;
     width: 100%;
+    align-items: center;
     justify-content: space-between;
-    padding: 1.25rem 1rem;
+
+    padding: 0.25rem 1rem;
+    margin-bottom: 1.3rem;
     border-bottom: 1px solid var(--text-color);
 
     .header-logo {
@@ -22,6 +25,7 @@
     }
 
     .header-middle {
+        @include align-center(fit-content, fit-content, row);
         ul {
             display: flex;
             cursor: pointer;
