@@ -60,5 +60,10 @@
     .header-end {
         @include align-center(fit-content, fit-content, row);
         gap: 9px;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+        
     }
 }
