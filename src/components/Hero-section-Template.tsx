@@ -4,12 +4,12 @@ import Image from "next/image";
 import { Button } from "./Button";
 
 interface HeroProps {
-    image: string;
+    flexDirection: string;
 }
 
-export const HeroSection = () => {
+export const HeroSection = ({ flexDirection }: HeroProps) => {
     return (
-        <section className="hero-section">
+        <section className={`hero-section ${flexDirection === "row-reverse" ? "flex-row-reverse" : "flex-row"}`}>
             <div>
                 <div>
                     <h1>

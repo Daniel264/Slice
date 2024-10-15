@@ -124,6 +124,12 @@ h1 {
   display: flex;
   gap: 5rem;
 }
+.hero-section.flex-row {
+  flex-direction: row;
+}
+.hero-section.flex-row-reverse {
+  flex-direction: row-reverse;
+}
 .hero-section div:nth-of-type(1) div:nth-of-type(1) h1 {
   font-size: 4rem;
   font-weight: 600;
@@ -146,13 +152,14 @@ h1 {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.butn::after {
-  width: 100%;
-  border: 2px solid black;
-}
 .butn:hover {
-  background: #777;
-  color: var(--background-color);
+  color: var(--primary-color);
+}
+.butn:hover::after {
+  display: flex;
+  content: "";
+  width: 100%;
+  border: 1px solid black;
 }
 
 .white_butn {
@@ -164,13 +171,14 @@ h1 {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.white_butn::after {
-  width: 100%;
-  border: 2px solid black;
-}
 .white_butn:hover {
-  background: #777;
-  color: var(--background-color);
+  color: var(--primary-color);
+}
+.white_butn:hover::after {
+  display: flex;
+  content: "";
+  width: 100%;
+  border: 1px solid black;
 }
 
 .companies-description {
