@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import { HeroSection } from "@/components/Hero-section-Template";
 import { SecondHero } from "@/components/Second-hero";
 import SEO from "@/components/SEO";
-import { works } from "@/utilities/yellow-text";
+import { tickText, works } from "@/utilities/yellow-text";
 
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
 
                 {/* <h3 className="my-5 text-5xl font-semibold">Splice</h3> */}
                 <Header />
-                <HeroSection flexDirection={"row"} designedText={true} src={"/assets/images/hero-img.svg"} arrayName={works} />
+                <HeroSection flexDirection={"row"} designedText={true} src={"/assets/images/hero-img.svg"} arrayName={tickText} />
                 <CompaniesCarousel />
                 <SecondHero />
             </main>
