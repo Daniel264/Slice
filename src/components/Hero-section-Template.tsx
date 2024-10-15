@@ -1,4 +1,4 @@
-import { works } from "@/utilities/yellow-text";
+import { tickText, works } from "@/utilities/yellow-text";
 import { YellowText } from "./Yellow-text";
 import Image from "next/image";
 import { Button } from "./Button";
@@ -20,18 +20,18 @@ export const HeroSection = ({ flexDirection = "row", designedText }: HeroProps) 
                             owning a house
                         </h1>
                     )}
-                    <Image src={"/assets/images/round-text.svg"} alt={""} width={280} height={100} />
+                    <Image src={"/assets/images/round-text.svg"} alt={""} width={280} height={100} className="round-img"/>
                 </div>
 
                 <div>
-                    <YellowText array={works} />
+                    <YellowText array={tickText} />
                 </div>
                 <div>
                     <Button buttonType={"butn"}>Get started</Button>
                 </div>
             </div>
             <div>
-                <Image src={"/assets/images/hero-img.svg"} alt={""} width={580} height={500} />
+                <Image src={"/assets/images/hero-img.svg"} alt={""} width={580} height={500} className="hero-img"/>
             </div>
         </section>
     );

@@ -119,8 +119,17 @@ h1 {
 .yellow-container > *:not(:last-child) {
   margin-bottom: 40px;
 }
+.yellow-container .map-div {
+  display: flex;
+}
+.yellow-container img {
+  width: 2rem;
+  height: 2rem;
+}
 .yellow-container .yellow-bg {
-  padding: 14px 20px;
+  width: 30px;
+  height: 30px;
+  padding: 4px;
   border-radius: 100%;
   background: var(--secondary-color);
   color: var(--primary-color);
@@ -171,20 +180,20 @@ h1 {
     font-size: 2.25rem;
   }
 }
-.hero-section div:nth-of-type(1) div:nth-of-type(1) img {
+.hero-section div:nth-of-type(1) div:nth-of-type(1) img.round-img {
   position: absolute;
   top: 11.5rem;
   left: 10rem;
 }
 @media screen and (max-width: 768px) {
-  .hero-section div:nth-of-type(1) div:nth-of-type(1) img {
+  .hero-section div:nth-of-type(1) div:nth-of-type(1) img.round-img {
     width: 16rem;
     top: 10.9rem;
     left: 4.2rem;
   }
 }
 @media screen and (max-width: 450px) {
-  .hero-section div:nth-of-type(1) div:nth-of-type(1) img {
+  .hero-section div:nth-of-type(1) div:nth-of-type(1) img.round-img {
     width: 12rem;
     top: 10.6rem;
     left: 4.7rem;

@@ -16,3 +16,4 @@ export const benefits = [
     { id: 3, text: "Get liquidity in 3 months" },
     { id: 4, text: "Benefit from diversification" },
 ];
+
