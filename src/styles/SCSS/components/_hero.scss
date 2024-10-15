@@ -3,14 +3,22 @@
 
 .hero-section {
     display: flex;
+    flex-direction: row;
     gap: 5rem;
 
     &.flex-row {
         flex-direction: row;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
     }
 
     &.flex-row-reverse {
         flex-direction: row-reverse;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
     }
 
     div:nth-of-type(1) {
@@ -19,12 +27,25 @@
             h1 {
                 font-size: var.$text-6xl;
                 font-weight: 600;
+
+                @media screen and (max-width: 768px) {
+                    font-size: var.$text-5xl;
+                }
+                @media screen and (max-width: 450px) {
+                    font-size: var.$text-3xl;
+                }
             }
 
             img {
                 position: absolute;
                 top: 11.5rem;
                 left: 10rem;
+
+                @media screen and (max-width: 768px) {
+                    width: 12rem;
+                    top: 10.6rem;
+                    left: 4.7rem;
+                }
             }
         }
 
