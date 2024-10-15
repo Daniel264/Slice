@@ -3,5 +3,5 @@ interface BadgeProps {
 }
 
 export const Badge = ({ children }: BadgeProps) => {
-    return <div>{children}</div>;
+    return <div className="badge">{children}</div>;
 };
