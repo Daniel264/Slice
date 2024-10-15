@@ -59,4 +59,10 @@
             padding-bottom: 3rem;
         }
     }
+
+    div:nth-of-type(2) {
+        .hero-img {
+            border-radius: 2rem;
+        }
+    }
 }

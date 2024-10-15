@@ -6,9 +6,10 @@ import { Button } from "./Button";
 interface HeroProps {
     flexDirection: string;
     designedText: boolean;
+    src: string;
 }
 
-export const HeroSection = ({ flexDirection = "row", designedText }: HeroProps) => {
+export const HeroSection = ({ flexDirection = "row", designedText, src }: HeroProps) => {
     return (
         <section className={`hero-section ${flexDirection === "row-reverse" ? "flex-row-reverse" : "flex-row"}`}>
             <div>
@@ -31,7 +32,7 @@ export const HeroSection = ({ flexDirection = "row", designedText }: HeroProps) 
                 </div>
             </div>
             <div>
-                <Image src={"/assets/images/hero-img.svg"} alt={""} width={580} height={500} className="hero-img"/>
+                <Image src={src} alt={""} width={580} height={500} className="hero-img"/>
             </div>
         </section>
     );
