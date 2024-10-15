@@ -9,7 +9,12 @@
         background: var(--secondary-color);
         color: var(--primary-color);
         margin-right: 8px;
+
+        @media screen and (max-width: 768px) {
+            padding: 4px 12px;
+        }
     }
+
 
     .yellow-text {
         font-weight: 500;
