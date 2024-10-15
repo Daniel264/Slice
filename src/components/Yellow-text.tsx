@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 interface TextProps {
-    array: { src?: string; id?: number; text: string }[];
+    array: { src?: string; id?: number; text?: string }[];
 }
 
 export const YellowText = ({ array }: TextProps) => {

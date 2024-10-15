@@ -1,4 +1,5 @@
 
+import { tickText } from "@/utilities/yellow-text";
 import { HeroSection } from "./Hero-section-Template";
 
 export const SecondHero = () => {
@@ -7,7 +8,9 @@ export const SecondHero = () => {
             <h1>
                 Invest in income-generating <br /> real estate easily
             </h1>
-            <HeroSection flexDirection={"row-reverse"} designedText={false} src={"/assets/images/section-img.svg"} />
+            <HeroSection flexDirection={"row-reverse"} designedText={false} src={"/assets/images/section-img.svg"} arrayName={tickText} />
         </section>
     );
 };
+
+

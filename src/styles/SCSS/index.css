@@ -127,6 +127,9 @@ h1 {
   height: 2rem;
 }
 .yellow-container .yellow-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   padding: 4px;
