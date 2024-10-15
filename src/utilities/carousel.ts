@@ -1,4 +1,4 @@
-export const FisrtCarousel = () => [
+export const FirstCarousel = () => [
     {
         id: 1,
         title: "Facebook",
