@@ -331,6 +331,12 @@ h1 {
   }
 }
 
+.badge {
+  background: var(--section-color);
+  text-transform: uppercase;
+  padding: 0.6rem;
+}
+
 h1 {
   font-size: 4rem;
   font-weight: 600;
