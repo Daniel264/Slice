@@ -346,6 +346,15 @@ h1 {
   padding: 0.6rem;
 }
 
+.second-hero {
+  position: relative;
+}
+.second-hero img.straight-image {
+  position: absolute;
+  top: 5.6rem;
+  left: 6rem;
+}
+
 h1 {
   font-size: 4rem;
   font-weight: 600;
