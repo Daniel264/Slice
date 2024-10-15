@@ -1,13 +1,13 @@
 export const tickText = [
-    { src: "/assets/images/check.svg", text: "Average return on investment of 7%" },
-    { src: "/assets/images/check.svg", text: "Withdraw your funds every 3 months" },
-    { src: "/assets/images/check.svg", text: "Investment selection from qualified SGRs" },
+    { id: 0, src: "/assets/images/check.svg", text: "Average return on investment of 7%" },
+    { id: 0, src: "/assets/images/check.svg", text: "Withdraw your funds every 3 months" },
+    { id: 0, src: "/assets/images/check.svg", text: "Investment selection from qualified SGRs" },
 ];
 
 export const works = [
-    { id: 1, text: "Create your profile in 3 minutes" },
-    { id: 2, text: "Invest in our real estate portfolio" },
-    { id: 3, text: "View the trend of collected rents and appreciation" },
+    { src: "", id: 1, text: "Create your profile in 3 minutes" },
+    { src: "", id: 2, text: "Invest in our real estate portfolio" },
+    { src: "", id: 3, text: "View the trend of collected rents and appreciation" },
 ];
 
 export const benefits = [
