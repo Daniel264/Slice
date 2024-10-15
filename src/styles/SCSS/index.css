@@ -51,7 +51,7 @@ h1 {
   display: flex;
   cursor: pointer;
   gap: 15px;
-  font-size: 0.85rem;
+  font-size: 0.65rem;
   font-weight: 500;
   color: var(--text-color);
 }
@@ -63,7 +63,7 @@ h1 {
 }
 @media screen and (min-width: 1024px) {
   .header-div .header-middle ul {
-    font-size: 1.35rem;
+    font-size: 1.1rem;
   }
 }
 .header-div .header-middle ul div li:hover {
