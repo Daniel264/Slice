@@ -5,7 +5,6 @@ import { Button } from "./Button";
 
 interface HeroProps {
     image: string;
-    
 }
 
 export const HeroSection = () => {
@@ -25,7 +24,7 @@ export const HeroSection = () => {
                     <YellowText array={works} />
                 </div>
                 <div>
-                    <Button>Get started</Button>
+                    <Button buttonType={"butn"}>Get started</Button>
                 </div>
             </div>
             <div>

@@ -146,8 +146,31 @@ h1 {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+.butn::after {
+  width: 100%;
+  border: 2px solid black;
+}
 .butn:hover {
   background: #777;
+  color: var(--background-color);
+}
+
+.white_butn {
+  background-color: white;
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 4.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.white_butn::after {
+  width: 100%;
+  border: 2px solid black;
+}
+.white_butn:hover {
+  background: #777;
+  color: var(--background-color);
 }
 
 .companies-description {

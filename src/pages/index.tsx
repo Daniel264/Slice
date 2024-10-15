@@ -1,7 +1,9 @@
 import { CompaniesCarousel } from "@/components/CompaniesCarousel";
 import Header from "@/components/Header";
 import { HeroSection } from "@/components/Hero-section-Template";
+import { SecondHero } from "@/components/Second-hero";
 import SEO from "@/components/SEO";
+
 import { works } from "@/utilities/yellow-text";
 works;
 
@@ -17,6 +19,7 @@ export default function Home() {
                 <Header />
                 <HeroSection />
                 <CompaniesCarousel />
+                <SecondHero />
             </main>
         </>
     );

@@ -3,3 +3,9 @@
 .butn {
     @include button-style(black);
 }
+
+.white_butn {
+    @include button-style(white, black,);
+}
+
+// $bg-color, $text-color: white, $padding: 1rem 2rem, $hover: #777

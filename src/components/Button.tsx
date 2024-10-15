@@ -1,7 +1,8 @@
 interface ButtonProps {
     children: string;
+    buttonType: string;
 }
 
-export const Button = ({ children }: ButtonProps) => {
-    return <button className="butn">{children}</button>;
+export const Button = ({ children, buttonType }: ButtonProps) => {
+    return <button className={`${buttonType}`}>{children}</button>;
 };

@@ -20,8 +20,8 @@ const Header = () => {
                 </ul>
             </div>
             <div className="header-end">
-                <p>Contact us</p>
-                <Button>Get this template</Button>
+                <Button buttonType={"white_butn"}>Contact us</Button>
+                <Button buttonType={"butn"}>Get this template</Button>
             </div>
         </div>
     );
