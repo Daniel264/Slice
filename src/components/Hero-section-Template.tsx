@@ -5,18 +5,21 @@ import { Button } from "./Button";
 
 interface HeroProps {
     flexDirection: string;
+    designedText: boolean;
 }
 
-export const HeroSection = ({ flexDirection = 'row' }: HeroProps) => {
+export const HeroSection = ({ flexDirection = "row", designedText }: HeroProps) => {
     return (
         <section className={`hero-section ${flexDirection === "row-reverse" ? "flex-row-reverse" : "flex-row"}`}>
             <div>
                 <div>
-                    <h1>
-                        Get Real Estate <br />
-                        income, without <br />
-                        owning a house
-                    </h1>
+                    {designedText && (
+                        <h1>
+                            Get Real Estate <br />
+                            income, without <br />
+                            owning a house
+                        </h1>
+                    )}
                     <Image src={"/assets/images/round-text.svg"} alt={""} width={280} height={100} />
                 </div>
 
