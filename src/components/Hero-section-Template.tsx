@@ -3,6 +3,11 @@ import { YellowText } from "./Yellow-text";
 import Image from "next/image";
 import { Button } from "./Button";
 
+interface HeroProps {
+    image: string;
+    
+}
+
 export const HeroSection = () => {
     return (
         <section className="hero-section">

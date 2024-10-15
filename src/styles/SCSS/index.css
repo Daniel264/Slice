@@ -24,6 +24,7 @@
   --accent-color: #e74c3c;
   --text-color: #737373;
   --background-color: #fff;
+  --section-color: #F9F7F2;
 }
 
 h1 {
@@ -153,8 +154,9 @@ h1 {
   display: flex;
   flex-direction: column;
   margin: 3rem 0;
-  width: -moz-fit-content;
-  width: fit-content;
+  background: var(--section-color);
+  padding: 2rem 0;
+  width: 80%;
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
@@ -167,7 +169,7 @@ h1 {
 }
 .companies-description h3 {
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 .companies-description div:nth-of-type(1) {
   display: flex;
