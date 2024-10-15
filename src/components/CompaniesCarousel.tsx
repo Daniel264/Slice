@@ -3,7 +3,7 @@ import { Key } from "react";
 
 export const CompaniesCarousel = () => {
     return (
-        <div>
+        <div className="companies-description">
             <h3>Helping teams at the world&apos;s best companies</h3>
 
             <div>

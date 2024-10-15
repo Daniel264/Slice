@@ -1,3 +1,4 @@
+import { CompaniesCarousel } from "@/components/CompaniesCarousel";
 import Header from "@/components/Header";
 import { HeroSection } from "@/components/Hero-section-Template";
 import SEO from "@/components/SEO";
@@ -15,6 +16,7 @@ export default function Home() {
                 {/* <h3 className="my-5 text-5xl font-semibold">Splice</h3> */}
                 <Header />
                 <HeroSection />
+                <CompaniesCarousel />
             </main>
         </>
     );
