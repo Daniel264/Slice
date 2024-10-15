@@ -3,17 +3,29 @@
 
 .companies-description {
     @include space-y(3rem);
+    margin: 3rem 0;
+    @include align-center(fit-content, fit-content, column);
     h3 {
-        font-size: var.$text-2xl;
+        font-size: var.$text-xl;
         font-weight: 500;
     }
 
     div:nth-of-type(1) {
         display: flex;
         gap: 4.6rem;
+        @include align-center(fit-content, fit-content, row);
+
+        div {
+            width: 7rem;
+        }
     }
     div:nth-of-type(2) {
         gap: 4.6rem;
         display: flex;
+        @include align-center(fit-content, fit-content, row);
+
+        div {
+            width: 7rem;
+        }
     }
 }

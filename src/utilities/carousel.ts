@@ -15,12 +15,12 @@ export const FirstCarousel = () => [
         image: "/assets/images/notion.svg",
     },
     {
-        id: 3,
+        id: 4,
         title: "Zapier",
         image: "/assets/images/zapier.svg",
     },
     {
-        id: 3,
+        id: 5,
         title: "Gum",
         image: "/assets/images/gum.svg",
     },
@@ -43,8 +43,13 @@ export const SecondCarousel = () => [
         image: "/assets/images/tq.svg",
     },
     {
-        id: 3,
+        id: 4,
         title: "sequoia",
         image: "/assets/images/sequoia.svg",
+    },
+    {
+        id: 5,
+        title: "caa",
+        image: "/assets/images/caa.svg",
     },
 ];

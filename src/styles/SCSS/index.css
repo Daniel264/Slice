@@ -152,21 +152,52 @@ h1 {
 .companies-description {
   display: flex;
   flex-direction: column;
+  margin: 3rem 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .companies-description > *:not(:last-child) {
   margin-bottom: 3rem;
 }
 .companies-description h3 {
-  font-size: 1.35rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 .companies-description div:nth-of-type(1) {
   display: flex;
   gap: 4.6rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.companies-description div:nth-of-type(1) div {
+  width: 7rem;
 }
 .companies-description div:nth-of-type(2) {
   gap: 4.6rem;
   display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.companies-description div:nth-of-type(2) div {
+  width: 7rem;
 }
 
 h1 {
