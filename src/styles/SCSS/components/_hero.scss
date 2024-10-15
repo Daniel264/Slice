@@ -24,6 +24,7 @@
     div:nth-of-type(1) {
         // @include space-y(30px);
         div:nth-of-type(1) {
+            position: relative;
             h1 {
                 font-size: var.$text-6xl;
                 padding-bottom: 1.6rem;
@@ -39,8 +40,8 @@
 
             img.round-img{
                 position: absolute;
-                top: 11.5rem;
-                left: 10rem;
+                top: 4.5rem;
+                left: -2.3rem;
 
                 @media screen and (max-width: 768px) {
                     width: 16rem;
