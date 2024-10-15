@@ -1,7 +1,7 @@
 export const tickText = [
-    { id: 1, text: "Average return on investment of 7%" },
-    { id: 2, text: "Withdraw your funds every 3 months" },
-    { id: 3, text: "Investment selection from qualified SGRs" },
+    { src: "/assets/images/check.svg", text: "Average return on investment of 7%" },
+    { src: "/assets/images/check.svg", text: "Withdraw your funds every 3 months" },
+    { src: "/assets/images/check.svg", text: "Investment selection from qualified SGRs" },
 ];
 
 export const works = [
@@ -16,4 +16,3 @@ export const benefits = [
     { id: 3, text: "Get liquidity in 3 months" },
     { id: 4, text: "Benefit from diversification" },
 ];
-
