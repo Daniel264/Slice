@@ -1,21 +1,17 @@
-import { tickText } from "@/utilities/yellow-text";
-import { works } from "@/utilities/yellow-text";
-import { benefits } from "@/utilities/yellow-text";
-
 interface TextProps {
-    array: { id: number; text: string }[];
+    array: { src?: string; id?: number; text: string }[];
 }
 
-export const YellowText = ({array}: TextProps) => {
+export const YellowText = ({ array }: TextProps) => {
     return (
         <div className="yellow-container">
-            {array.map((item: { id: number; text: string }, id: number) => (
+            {array.map((item, id: number) => (
                 <div key={id}>
-                    <span className="yellow-bg">{item.id}</span>
+                    {item.src ? <img src={item.src} alt="icon" className="yellow-bg" /> : <span className="yellow-bg">{item.id}</span>}
+
                     <span className="yellow-text">{item.text}</span>
                 </div>
             ))}
         </div>
     );
 };
-
