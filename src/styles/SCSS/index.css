@@ -331,7 +331,16 @@ h1 {
   }
 }
 
-.badge {
+.badge-div {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.badge-div .badge {
   background: var(--section-color);
   text-transform: uppercase;
   padding: 0.6rem;

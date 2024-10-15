@@ -1,5 +1,10 @@
-.badge {
-    background: var(--section-color);
-    text-transform: uppercase;
-    padding: 0.6rem;
+@use "../mixins/mixins" as *;
+
+.badge-div {
+    @include align-center(100%, fit-content, row);
+    .badge {
+        background: var(--section-color);
+        text-transform: uppercase;
+        padding: 0.6rem;
+    }
 }

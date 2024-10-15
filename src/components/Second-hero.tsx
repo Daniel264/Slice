@@ -6,7 +6,9 @@ import { Badge } from "./Badge";
 export const SecondHero = () => {
     return (
         <section>
-            <Badge>How does it work</Badge>
+            <div className="badge-div">
+                <Badge>How does it work</Badge>
+            </div>
             <h1>
                 Invest in income-generating <br /> real estate easily
             </h1>
