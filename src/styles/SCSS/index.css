@@ -286,6 +286,7 @@ h1 {
 .companies-description div:nth-of-type(1) {
   display: flex;
   gap: 4.6rem;
+  white-space: nowrap;
   width: -moz-fit-content;
   width: fit-content;
   height: -moz-fit-content;
@@ -294,7 +295,7 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  animation: 5s slide infinite linear;
+  animation: slide 15s linear infinite;
 }
 @media screen and (max-width: 768px) {
   .companies-description div:nth-of-type(1) {
@@ -312,6 +313,7 @@ h1 {
 .companies-description div:nth-of-type(2) {
   gap: 4.6rem;
   display: flex;
+  white-space: nowrap;
   width: -moz-fit-content;
   width: fit-content;
   height: -moz-fit-content;
@@ -320,7 +322,7 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  animation: 5s reverse-slide infinite linear;
+  animation: 15s reverse-slide infinite linear;
 }
 @media screen and (max-width: 768px) {
   .companies-description div:nth-of-type(2) {

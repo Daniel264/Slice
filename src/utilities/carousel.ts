@@ -24,6 +24,31 @@ export const FirstCarousel = () => [
         title: "Gum",
         image: "/assets/images/gum.svg",
     },
+    // {
+    //     id: 6,
+    //     title: "Facebook",
+    //     image: "/assets/images/facebook.svg",
+    // },
+    // {
+    //     id: 7,
+    //     title: "Ideo",
+    //     image: "/assets/images/ideo.svg",
+    // },
+    // {
+    //     id: 8,
+    //     title: "Notion",
+    //     image: "/assets/images/notion.svg",
+    // },
+    // {
+    //     id: 9,
+    //     title: "Zapier",
+    //     image: "/assets/images/zapier.svg",
+    // },
+    // {
+    //     id: 10,
+    //     title: "Gum",
+    //     image: "/assets/images/gum.svg",
+    // },
 ];
 
 export const SecondCarousel = () => [

@@ -1,20 +1,23 @@
 import { FirstCarousel, SecondCarousel } from "@/utilities/carousel";
-import { Key } from "react";
+import { Key, useMemo } from "react";
 
 export const CompaniesCarousel = () => {
+    const firstDuplicatedArray = useMemo(() => [...FirstCarousel(), ...FirstCarousel(), ...FirstCarousel()], []);
+
+    const secondDuplicatedArray = [...SecondCarousel(), ...SecondCarousel(), ...SecondCarousel()];
     return (
         <div className="companies-description">
             <h3>Helping teams at the world&apos;s best companies</h3>
 
             <div>
-                {FirstCarousel().map((company: { image: string | undefined; title: string | undefined }, index: Key | null | undefined) => (
+                {firstDuplicatedArray.map((company: { image: string | undefined; title: string | undefined }, index: Key | null | undefined) => (
                     <div key={index}>
                         <img src={company.image} alt={company.title} />
                     </div>
                 ))}
             </div>
             <div>
-                {SecondCarousel().map((company: { image: string | undefined; title: string | undefined }, index: Key | null | undefined) => (
+                {secondDuplicatedArray.map((company: { image: string | undefined; title: string | undefined }, index: Key | null | undefined) => (
                     <div key={index}>
                         <img src={company.image} alt={company.title} />
                     </div>
