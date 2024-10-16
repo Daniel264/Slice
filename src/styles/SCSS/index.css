@@ -382,6 +382,13 @@ h1 {
   height: fit-content;
 }
 
+.range-component {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  padding: 2rem 4rem;
+}
+
 h1 {
   font-size: 4rem;
   font-weight: 600;
