@@ -351,6 +351,38 @@ h1 {
   left: 6rem;
 }
 
+.range-container {
+  width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768) {
+  .range-container {
+    width: 50%;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.range-container label {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+.range-container .range-slider {
+  background: var(--primary-color);
+  color: var(--primary-color);
+  width: 10rem;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 h1 {
   font-size: 4rem;
   font-weight: 600;

@@ -1,0 +1,23 @@
+@use "../mixins/mixins" as *;
+@use "../variable/variable" as var;
+
+.range-container {
+    @include align-center(50%, fit-content, row);
+
+    @media screen and (max-width: 768) {
+        @include align-center(50%, fit-content, row);
+    }
+
+    label {
+        font-size: var.$text-3xl;
+        font-weight: 600;
+    }
+
+    .range-slider {
+        background: var(--primary-color);
+        color: var(--primary-color);
+        width: 10rem;
+        height: fit-content;
+
+    }
+}
