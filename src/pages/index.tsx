@@ -1,6 +1,7 @@
 import { CompaniesCarousel } from "@/components/CompaniesCarousel";
 import Header from "@/components/Header";
 import { HeroSection } from "@/components/Hero-section-Template";
+import RangeSlider from "@/components/Range-slider";
 import { SecondHero } from "@/components/Second-hero";
 import SEO from "@/components/SEO";
 import { tickText, works } from "@/utilities/yellow-text";
@@ -19,6 +20,7 @@ export default function Home() {
                 <HeroSection flexDirection={"row"} designedText={true} src={"/assets/images/hero-img.svg"} arrayName={tickText} />
                 <CompaniesCarousel />
                 <SecondHero />
+                <RangeSlider />
             </main>
         </>
     );

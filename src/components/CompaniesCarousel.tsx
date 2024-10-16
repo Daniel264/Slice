@@ -1,5 +1,6 @@
 import { FirstCarousel, SecondCarousel } from "@/utilities/carousel";
 import { Key, useMemo } from "react";
+import Image from "next/image";
 
 export const CompaniesCarousel = () => {
     const firstDuplicatedArray = useMemo(() => [...FirstCarousel(), ...FirstCarousel(), ...FirstCarousel(), ...FirstCarousel()], []);
