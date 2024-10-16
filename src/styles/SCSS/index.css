@@ -294,6 +294,7 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  animation: 5s slide infinite linear;
 }
 @media screen and (max-width: 768px) {
   .companies-description div:nth-of-type(1) {
@@ -334,6 +335,14 @@ h1 {
   }
 }
 
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 .badge-div {
   width: 100%;
   height: -moz-fit-content;
@@ -346,7 +355,8 @@ h1 {
 .badge-div .badge {
   background: var(--section-color);
   text-transform: uppercase;
-  padding: 0.6rem;
+  padding: 0.75rem;
+  font-weight: 600;
 }
 
 .second-hero {

@@ -3,7 +3,7 @@
 
 // export const Hero = () => {
 //     return (
-//         <div>
+//         <div className="">
 //             <HeroSection />
 //             <HeroSection />
 
