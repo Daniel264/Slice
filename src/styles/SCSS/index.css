@@ -386,5 +386,34 @@ h1 {
 h1 {
   font-size: 4rem;
   font-weight: 600;
-  text-align: center;
+  font-style: normal;
+  line-height: line-height;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-style: normal;
+  font-variant: normal;
+}
+
+h3 {
+  font-size: 1.875rem;
+  font-weight: 500;
+  font-style: normal;
+  font-variant: normal;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: normal;
+  font-variant: normal;
+}
+
+h5 {
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-style: normal;
+  font-variant: normal;
 }/*# sourceMappingURL=index.css.map */

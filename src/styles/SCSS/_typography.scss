@@ -11,9 +11,45 @@ $text-7xl: 5rem;
 $text-8xl: 6rem;
 $text-9xl: 8rem;
 
-h1 {
-    font-size: $text-6xl;
-    font-weight: 600;
-    text-align: center;
+@mixin bold-header($line-height) {
+    font-size: $text-7xl;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1rem;
 }
 
+@mixin semibold-header($line-height: 1rem) {
+    font-size: $text-6xl;
+    font-weight: 600;
+    font-style: normal;
+    line-height: $line-height;
+}
+
+h1 {
+    @include semibold-header(line-height);
+}
+
+h2 {
+    font-size: $text-5xl;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+}
+h3 {
+    font-size: $text-3xl;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+}
+h4 {
+    font-size: $text-xl;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+}
+h5 {
+    font-size: $text-lg;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+}
