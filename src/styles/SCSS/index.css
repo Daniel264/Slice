@@ -283,36 +283,10 @@ h1 {
   font-size: 1.1rem;
   font-weight: 700;
 }
-.companies-description div:nth-of-type(1) {
-  display: flex;
-  gap: 4.6rem;
-  white-space: nowrap;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  animation: slide 15s linear infinite;
-}
-@media screen and (max-width: 768px) {
-  .companies-description div:nth-of-type(1) {
-    gap: 3rem;
-  }
-}
-.companies-description div:nth-of-type(1) div {
-  width: 7rem;
-}
-@media screen and (max-width: 768px) {
-  .companies-description div:nth-of-type(1) div {
-    width: 4.6rem;
-  }
-}
+.companies-description div:nth-of-type(1),
 .companies-description div:nth-of-type(2) {
-  gap: 4.6rem;
   display: flex;
+  gap: 4.6rem;
   white-space: nowrap;
   width: -moz-fit-content;
   width: fit-content;
@@ -322,20 +296,26 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  animation: 15s reverse-slide infinite linear;
+  animation: slide 20s linear infinite;
 }
 @media screen and (max-width: 768px) {
+  .companies-description div:nth-of-type(1),
   .companies-description div:nth-of-type(2) {
     gap: 3rem;
   }
 }
+.companies-description div:nth-of-type(1) div,
 .companies-description div:nth-of-type(2) div {
   width: 7rem;
 }
 @media screen and (max-width: 768px) {
+  .companies-description div:nth-of-type(1) div,
   .companies-description div:nth-of-type(2) div {
     width: 4.6rem;
   }
+}
+.companies-description div:nth-of-type(2) {
+  animation-direction: reverse;
 }
 
 @keyframes slide {
@@ -343,15 +323,7 @@ h1 {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
-  }
-}
-@keyframes reverse-slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100%);
+    transform: translateX(-30%);
   }
 }
 .badge-div {

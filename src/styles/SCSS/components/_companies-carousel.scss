@@ -18,12 +18,14 @@
         font-weight: 700;
     }
 
-    div:nth-of-type(1) {
+    div:nth-of-type(1),
+    div:nth-of-type(2)
+    {
         display: flex;
         gap: 4.6rem;
         white-space: nowrap;
         @include align-center(fit-content, fit-content, row);
-        animation: slide 15s linear infinite;
+        animation: slide 20s linear infinite;
 
         @media screen and (max-width: 768px) {
             gap: 3rem;
@@ -39,23 +41,7 @@
     }
 
     div:nth-of-type(2) {
-        gap: 4.6rem;
-        display: flex;
-        white-space: nowrap;
-        @include align-center(fit-content, fit-content, row);
-        animation: 15s reverse-slide infinite linear;
-
-        @media screen and (max-width: 768px) {
-            gap: 3rem;
-        }
-
-        div {
-            width: 7rem;
-
-            @media screen and (max-width: 768px) {
-                width: 4.6rem;
-            }
-        }
+        animation-direction: reverse;
     }
 }
 
@@ -65,15 +51,6 @@
     }
 
     to {
-        transform: translateX(-100%);
-    }
-}
-@keyframes reverse-slide {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(100%);
+        transform: translateX(-30%);
     }
 }
