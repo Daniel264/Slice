@@ -8,8 +8,8 @@ export const RangeComponent = () => {
                     Evaluate your <br /> potential return
                 </h1>
                 <p>
-                    Whether it&apos;s building a passive income stream <br />
-                    through rental properties or capitalizing on <br />
+                    Whether it&apos;s building a passive income stream 
+                    through rental properties or capitalizing on 
                     property appreciation.
                 </p>
             </div>
