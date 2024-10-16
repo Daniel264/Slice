@@ -14,7 +14,7 @@ const RangeSlider = () => {
     return (
         <div className="range-container">
             <label htmlFor="range">${value}</label>
-            <input type="range" onProgress={onMoveBack} onPointerUp={onMoveBack} onChange={onchange || onMoveBack} className="range-slider" />
+            <input type="range" onProgress={onMoveBack} onPointerUp={onMoveBack} onChange={onchange || onMoveBack} className="range-slider rating" />
         </div>
     );
 };

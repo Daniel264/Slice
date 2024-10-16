@@ -387,6 +387,9 @@ h1 {
   flex-direction: row;
   width: 80%;
   padding: 2rem 4rem;
+  background: var(--section-color);
+  border-radius: 2rem;
+  margin-top: 4rem;
 }
 
 h1 {
