@@ -40,6 +40,7 @@
         gap: 4.6rem;
         display: flex;
         @include align-center(fit-content, fit-content, row);
+        animation: 5s reverse-slide infinite linear;
 
         @media screen and (max-width: 768px) {
             gap: 3rem;
@@ -62,5 +63,14 @@
 
     to {
         transform: translateX(-100%);
+    }
+}
+@keyframes reverse-slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
     }
 }
