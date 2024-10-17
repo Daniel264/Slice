@@ -120,13 +120,20 @@ h1 {
   margin-bottom: 40px;
 }
 .yellow-container .map-div {
+  width: 310px;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   display: flex;
 }
-.yellow-container img {
+.yellow-container .map-div img {
   width: 2rem;
   height: 2rem;
 }
-.yellow-container .yellow-bg {
+.yellow-container .map-div .yellow-bg {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,11 +146,11 @@ h1 {
   margin-right: 8px;
 }
 @media screen and (max-width: 768px) {
-  .yellow-container .yellow-bg {
+  .yellow-container .map-div .yellow-bg {
     padding: 4px 12px;
   }
 }
-.yellow-container .yellow-text {
+.yellow-container .map-div .yellow-text {
   font-weight: 500;
 }
 
