@@ -7,9 +7,10 @@ interface HeroProps {
     designedText: boolean;
     src: string;
     arrayName: { src: string; id: number; text: string }[];
+    showImage?: boolean;
 }
 
-export const HeroSection = ({ flexDirection = "row", designedText, src, arrayName }: HeroProps) => {
+export const HeroSection = ({ flexDirection = "row", designedText, src, arrayName, showImage }: HeroProps) => {
     return (
         <section className={`hero-section ${flexDirection === "row-reverse" ? "flex-row-reverse" : "flex-row"}`}>
             <div>
@@ -21,7 +22,7 @@ export const HeroSection = ({ flexDirection = "row", designedText, src, arrayNam
                             owning a house
                         </h1>
                     )}
-                    <Image src={"/assets/images/round-text.svg"} alt={""} width={280} height={100} className="round-img" />
+                    {showImage && <Image src={"/assets/images/round-text.svg"} alt={""} width={280} height={100} className="round-img" />}
                 </div>
 
                 <div>
