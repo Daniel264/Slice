@@ -1,3 +1,4 @@
+import { Benefits } from "@/components/Benefits";
 import { CompaniesCarousel } from "@/components/CompaniesCarousel";
 import Header from "@/components/Header";
 import { HeroSection } from "@/components/Hero-section-Template";
@@ -22,6 +23,7 @@ export default function Home() {
                 <CompaniesCarousel />
                 <SecondHero />
                 <RangeComponent />
+                <Benefits />
             </main>
         </>
     );
