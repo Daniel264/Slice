@@ -2,10 +2,12 @@
 
 .yellow-container {
     @include space-y(40px);
+    @include align-center(310px, 50vh, column);
+
 
     .map-div {
-        @include align-center(310px, fit-content, row);
         display: flex;
+
         img {
             width: 2rem;
             height: 2rem;
