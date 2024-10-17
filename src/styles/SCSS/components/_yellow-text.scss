@@ -3,36 +3,32 @@
 .yellow-container {
     @include mix.space-y(40px);
 
-
     .map-div {
         display: flex;
-    }
-
-    img {
-        width: 2rem;
-        height: 2rem;
-    }
-
-    .yellow-bg {
-        // padding: 14px 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30px;
-        height: 30px;
-        padding: 4px;
-        border-radius: 100%;
-        background: var(--secondary-color);
-        color: var(--primary-color);
-        margin-right: 8px;
-
-        @media screen and (max-width: 768px) {
-            padding: 4px 12px;
+        img {
+            width: 2rem;
+            height: 2rem;
         }
-    }
+        .yellow-bg {
+            // padding: 14px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            padding: 4px;
+            border-radius: 100%;
+            background: var(--secondary-color);
+            color: var(--primary-color);
+            margin-right: 8px;
 
+            @media screen and (max-width: 768px) {
+                padding: 4px 12px;
+            }
+        }
 
-    .yellow-text {
-        font-weight: 500;
+        .yellow-text {
+            font-weight: 500;
+        }
     }
 }
