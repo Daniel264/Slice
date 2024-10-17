@@ -1,20 +1,18 @@
 import React, { useState } from "react";
 
-const RangeSlider = () => {
+const RangeSlider:React.FC = () => {
 
-    const [value, setValue] = useState(0);
+    const [value, setValue] = useState<number>(50);
 
-    function onchange(e:any) {
-        setValue(value + 1)
-    }
+     const handleChange = (event:React.ChangeEvent<HTMLInputElement>) => {
+        setValue(Number(event.target.value));
+     }
 
-    function onMoveBack(e: any) {
-        setValue(value - 1);
-    }
     return (
         <div className="range-container">
             <label htmlFor="range">${value}</label>
-            <input type="range" onProgress={onMoveBack} onPointerUp={onMoveBack} onChange={onchange || onMoveBack} className="range-slider rating" />
+            <input type="range" min={0} max={100} value={value} onChange={handleChange} className="range-slider rating" />
+
         </div>
     );
 };

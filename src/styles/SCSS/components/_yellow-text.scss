@@ -1,12 +1,11 @@
-@use "../mixins/mixins" as *;
+@use "../mixins/mixins" as mix;
 
 .yellow-container {
-    @include space-y(40px);
-    @include align-center(310px, 50vh, column);
-
+    @include mix.space-y(40px);
 
     .map-div {
         display: flex;
+        // @include align-center(310px, fit-content, row);
 
         img {
             width: 2rem;

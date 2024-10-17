@@ -21,9 +21,9 @@
         }
     }
 
-    .hero-section .text-side {
+    div:nth-of-type(1) {
         // @include space-y(30px);
-        @include align-center(fit-content, , column);
+
         div:nth-of-type(1) {
             position: relative;
             h1 {
