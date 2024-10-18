@@ -18,7 +18,8 @@ const RangeSlider: React.FC = () => {
         width: 20%;
         font-size: 4.5rem;
         text-align: center;
-        color: #555;
+        color: #D7D9CE;
+        // opacity: 30;
         font-weight: bold;
     `;
 
@@ -26,12 +27,12 @@ const RangeSlider: React.FC = () => {
 
         font-size: 1rem;
         display: flex;
-        font-weight: 600;
+        font-weight: 800;
         color: #000;
     `;
 
     const StyledRange = styles.input`
-        width: 80%;
+        width: 90%;
         -webkit-appearance: none;
         appearance: none;
         height: 18px;
@@ -64,15 +65,15 @@ const RangeSlider: React.FC = () => {
     `;
 
     const DollarTag = styles.span`
-        color: #555;
+        color: #D7D9CE;
         font-size: 5rem;
         font-weight: 700;
+        padding-left: 8rem;
     `;
     const PlaceHolder = styles.section`
         width: 100%;
         align-items: center;
         justify-content: center;
-        // height: max-content;
         display: flex;
         flex-direction: row;
     `;
@@ -80,18 +81,19 @@ const RangeSlider: React.FC = () => {
         width: 100%;
         align-items: end;
         justify-content: center;
-        gap: 150px;
-        // height: max-content;
+        gap: 320px;
+
         display: flex;
         flex-direction: row;
+        font-weight: 800;
     `;
     const HigherPlaceHolder = styles.section`
         padding-bottom: 30px;
         width: 100%;
         align-items: start;
         justify-content: center;
-        gap: 150px;
-        // height: max-content;
+        gap: 280px;
+
         display: flex;
         flex-direction: row;
     `;
