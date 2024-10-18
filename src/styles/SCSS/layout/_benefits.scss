@@ -1,2 +1,7 @@
 @use '../components/badge' as bad;
+@use '../components/hero' as *;
 
+
+.badge-component {
+    @include hero
+}
