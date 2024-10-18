@@ -1,103 +1,102 @@
 import React, { useState } from "react";
-import styles from "styled-components";
+import styled from "styled-components";
 
-const RangeSlider: React.FC = () => {
-    const SliderContainer = styles.div`
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 500px;
-        margin-bottom: 0;
-    `;
+const SliderContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 0;
+`;
 
-    const StyledInput = styles.input`
-        margin: 10px 0;
-        border: none;
-        outline:none;
-        width: 20%;
-        font-size: 4.5rem;
-        text-align: center;
-        color: #D7D9CE;
-        // opacity: 30;
-        font-weight: bold;
-    `;
+const StyledInput = styled.input`
+    margin: 10px 0;
+    border: none;
+    outline:none;
+    width: 20%;
+    font-size: 4.5rem;
+    text-align: center;
+    color: #D7D9CE;
+    // opacity: 30;
+    font-weight: bold;
+`;
 
-    const StyledInputText = styles.span`
+const StyledInputText = styled.span`
 
-        font-size: 1rem;
-        display: flex;
-        font-weight: 800;
-        color: #000;
-    `;
+    font-size: 1rem;
+    display: flex;
+    font-weight: 800;
+    color: #000;
+`;
 
-    const StyledRange = styles.input`
-        width: 90%;
+const StyledRange = styled.input`
+    width: 90%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 18px;
+    border-radius: 1rem;
+    background: #ddd;
+    outline: none;
+    opacity: 1;
+    transition: opacity .2s;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
-        height: 18px;
-        border-radius: 1rem;
-        background: #ddd;
-        outline: none;
-        opacity: 1;
-        transition: opacity .2s;
+        width: 35px;
+        height: 35px;
+        background: #000;
+         border-radius: 2rem;
+        cursor: pointer;
+    }
 
-        &:hover {
-            opacity: 1;
-        }
+    &::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        background: #000;
+        cursor: pointer;
+    }
+`;
 
-        &::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 35px;
-            height: 35px;
-            background: #000;
-             border-radius: 2rem;
-            cursor: pointer;
-        }
+const DollarTag = styled.span`
+    color: #D7D9CE;
+    font-size: 5rem;
+    font-weight: 700;
+    padding-left: 8rem;
+`;
+const PlaceHolder = styled.section`
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+`;
+const LowerPlaceHolder = styled.section`
+    width: 100%;
+    align-items: end;
+    justify-content: center;
+    gap: 320px;
 
-        &::-moz-range-thumb {
-            width: 25px;
-            height: 25px;
-            background: #000;
-            cursor: pointer;
-        }
-    `;
+    display: flex;
+    flex-direction: row;
+    font-weight: 800;
+`;
+const HigherPlaceHolder = styled.section`
+    padding-bottom: 30px;
+    width: 100%;
+    align-items: start;
+    justify-content: center;
+    gap: 280px;
 
-    const DollarTag = styles.span`
-        color: #D7D9CE;
-        font-size: 5rem;
-        font-weight: 700;
-        padding-left: 8rem;
-    `;
-    const PlaceHolder = styles.section`
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        flex-direction: row;
-    `;
-    const LowerPlaceHolder = styles.section`
-        width: 100%;
-        align-items: end;
-        justify-content: center;
-        gap: 320px;
-
-        display: flex;
-        flex-direction: row;
-        font-weight: 800;
-    `;
-    const HigherPlaceHolder = styles.section`
-        padding-bottom: 30px;
-        width: 100%;
-        align-items: start;
-        justify-content: center;
-        gap: 280px;
-
-        display: flex;
-        flex-direction: row;
-    `;
-
+    display: flex;
+    flex-direction: row;
+`;
+const RangeSlider: React.FC = () => {
     const [value, setValue] = useState<number>(50);
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
