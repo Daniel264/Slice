@@ -85,6 +85,16 @@ const RangeSlider: React.FC = () => {
         display: flex;
         flex-direction: row;
     `;
+    const HigherPlaceHolder = styles.section`
+        padding-bottom: 30px;
+        width: 100%;
+        align-items: start;
+        justify-content: center;
+        gap: 150px;
+        // height: max-content;
+        display: flex;
+        flex-direction: row;
+    `;
 
     const [value, setValue] = useState<number>(50);
 
@@ -95,6 +105,10 @@ const RangeSlider: React.FC = () => {
     return (
         <SliderContainer>
             {/* <label htmlFor="range">${value}</label> */}
+            <HigherPlaceHolder>
+                <StyledInputText>Capitale Investito</StyledInputText>
+                <StyledInputText>$25,000</StyledInputText>
+            </HigherPlaceHolder>
             <StyledRange type="range" min={0} max={100} value={value} onChange={handleChange} className="range-slider rating" />
             <PlaceHolder>
                 <StyledInputText>I tuol interessi dopo 5 anni</StyledInputText>
