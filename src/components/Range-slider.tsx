@@ -1,7 +1,50 @@
 import React, { useState } from "react";
-// import styles from 'styled-components';
+import styles from 'styled-components';
 
 const RangeSlider:React.FC = () => {
+
+    const SliderContainer = styles.div`
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    `;
+
+    const StyledInput = styles.input`
+        margin: 10px 0;
+        width: 80%;
+    `;
+
+    const StyledRange = styles.input`
+        width: 80%;
+        -webkit-appearance: none;
+        appearance: none;
+        height: 5px;
+        background: #ddd;
+        outline: none;
+        opacity: 0.7;
+        transition: opacity .2s;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            background: #4CAF50;
+            cursor: pointer;
+        }
+
+        &::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            background: #4CAF50;
+            cursor: pointer;
+        }
+    `;
 
     const [value, setValue] = useState<number>(50);
 
@@ -10,12 +53,12 @@ const RangeSlider:React.FC = () => {
      }
 
     return (
-        <div className="range-container">
+        <SliderContainer>
             {/* <label htmlFor="range">${value}</label> */}
-            <input type="number" value={value} onChange={handleChange}/>
-            <input type="range" min={0} max={100} value={value} onChange={handleChange} className="range-slider rating" />
+            <StyledInput type="number" value={value} onChange={handleChange}/>
+            <StyledRange type="range" min={0} max={100} value={value} onChange={handleChange} className="range-slider rating" />
 
-        </div>
+        </SliderContainer>
     );
 };
 

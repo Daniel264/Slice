@@ -26,6 +26,7 @@
         "sass": "^1.79.5",
         "scss": "^0.2.4",
         "styled": "^1.0.0",
+        "styled-components": "^6.1.13",
         "valtio": "^1.13.2"
     },
     "devDependencies": {
