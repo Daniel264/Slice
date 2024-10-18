@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import styles from 'styled-components';
 
 const RangeSlider:React.FC = () => {
 
@@ -10,7 +11,8 @@ const RangeSlider:React.FC = () => {
 
     return (
         <div className="range-container">
-            <label htmlFor="range">${value}</label>
+            {/* <label htmlFor="range">${value}</label> */}
+            <input type="number" value={value} onChange={handleChange}/>
             <input type="range" min={0} max={100} value={value} onChange={handleChange} className="range-slider rating" />
 
         </div>

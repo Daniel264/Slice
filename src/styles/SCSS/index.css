@@ -255,6 +255,7 @@ h1 {
   flex-direction: column;
   margin: 3rem 0;
   background: var(--section-color);
+  border-radius: 2rem;
   padding: 2rem 0;
   width: 80%;
   height: -moz-fit-content;
@@ -286,7 +287,7 @@ h1 {
 .companies-description div:nth-of-type(1),
 .companies-description div:nth-of-type(2) {
   display: flex;
-  gap: 4.6rem;
+  gap: 9rem;
   white-space: nowrap;
   width: -moz-fit-content;
   width: fit-content;
