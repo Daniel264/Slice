@@ -7,6 +7,8 @@ const RangeSlider: React.FC = () => {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        height: 500px;
+        margin-bottom: 0;
     `;
 
     const StyledInput = styles.input`
@@ -20,15 +22,23 @@ const RangeSlider: React.FC = () => {
         font-weight: bold;
     `;
 
+    const StyledInputText = styles.span`
+
+        font-size: 1rem;
+        display: flex;
+        font-weight: 600;
+        color: #000;
+    `;
+
     const StyledRange = styles.input`
         width: 80%;
         -webkit-appearance: none;
         appearance: none;
-        height: 10px;
+        height: 18px;
         border-radius: 1rem;
         background: #ddd;
         outline: none;
-        opacity: 0.7;
+        opacity: 1;
         transition: opacity .2s;
 
         &:hover {
@@ -38,17 +48,17 @@ const RangeSlider: React.FC = () => {
         &::-webkit-slider-thumb {
             -webkit-appearance: none;
             appearance: none;
-            width: 25px;
-            height: 25px;
-            background: #4CAF50;
-             border-radius: 1rem;
+            width: 35px;
+            height: 35px;
+            background: #000;
+             border-radius: 2rem;
             cursor: pointer;
         }
 
         &::-moz-range-thumb {
             width: 25px;
             height: 25px;
-            background: #4CAF50;
+            background: #000;
             cursor: pointer;
         }
     `;
@@ -62,6 +72,16 @@ const RangeSlider: React.FC = () => {
         width: 100%;
         align-items: center;
         justify-content: center;
+        // height: max-content;
+        display: flex;
+        flex-direction: row;
+    `;
+    const LowerPlaceHolder = styles.section`
+        width: 100%;
+        align-items: end;
+        justify-content: center;
+        gap: 150px;
+        // height: max-content;
         display: flex;
         flex-direction: row;
     `;
@@ -75,11 +95,16 @@ const RangeSlider: React.FC = () => {
     return (
         <SliderContainer>
             {/* <label htmlFor="range">${value}</label> */}
-            <PlaceHolder>
-                <DollarTag>$</DollarTag>
-                <StyledInput type="number" value={value} placeholder={"$"} onChange={handleChange} />
-            </PlaceHolder>
             <StyledRange type="range" min={0} max={100} value={value} onChange={handleChange} className="range-slider rating" />
+            <PlaceHolder>
+                <StyledInputText>I tuol interessi dopo 5 anni</StyledInputText>
+                <DollarTag>$</DollarTag>
+                <StyledInput type="number" value={value} onChange={handleChange} />
+            </PlaceHolder>
+            <LowerPlaceHolder>
+                <StyledInputText>Valore futuro</StyledInputText>
+                <StyledInputText>$34,750</StyledInputText>
+            </LowerPlaceHolder>
         </SliderContainer>
     );
 };
