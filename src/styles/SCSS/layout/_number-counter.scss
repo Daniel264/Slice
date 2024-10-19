@@ -7,30 +7,30 @@
     &__number-display {
         font-size: var.$text-6xl;
         font-weight: 500;
-        animation: counter 5s infinite alternate ease-in-out;
-        counter-reset: num var(--num);
-        font: 800 40px Manrope, sans-serif;
+        // animation: counter 5s infinite alternate ease-in-out;
+        // counter-reset: num var(--num);
+        // font: 800 40px Manrope, sans-serif;
 
-        &::after {
-            content: counter(num);
-        }
+        // &::after {
+        //     content: counter(num);
+        // }
     }
 } 
 
 
-@property --num {
-    syntax: '<integer>';
-    initial-value: 0;
-    inherits: false;
-}
+// @property --num {
+//     syntax: '<integer>';
+//     initial-value: 0;
+//     inherits: false;
+// }
 
 
-@keyframes counter {
-    from {
-        --num: 0;
-    }
+// @keyframes counter {
+//     from {
+//         --num: 0;
+//     }
 
-    to {
-        --num: 100;
-    }
-}
+//     to {
+//         --num: 100;
+//     }
+// }
