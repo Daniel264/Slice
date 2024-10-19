@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import NumberCounter from "./NumberCounter";
+import { numbercounter } from "@/utilities/number-counter";
 
 const StyledSpan = styled.span`
     color: #737373;
@@ -12,6 +13,7 @@ const StyledSpan = styled.span`
 const SavingsWrapper = styled.section`
 
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     height: max-content;
     align-items: center;
@@ -43,7 +45,9 @@ const Savings = () => {
             </article>
 
             <article>
-                <NumberCounter id={0} number={0} sign={""} text={""} />
+                {numbercounter.map((item) => (
+                    <NumberCounter key={item.id} id={0} number={item.number} sign={item.sign} text={item.text} />
+                ))}
             </article>
         </SavingsWrapper>
     );
