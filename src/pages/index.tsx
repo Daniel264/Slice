@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import { HeroSection } from "@/components/Hero-section-Template";
 import RangeSlider from "@/components/Range-slider";
 import { RangeComponent } from "@/components/RangeComponent";
+import Savings from "@/components/Savings";
 import { SecondHero } from "@/components/Second-hero";
 import SEO from "@/components/SEO";
 import { tickText, works } from "@/utilities/yellow-text";
@@ -24,6 +25,7 @@ export default function Home() {
                 <SecondHero />
                 <RangeComponent />
                 <Benefits />
+                <Savings />
             </main>
         </>
     );
