@@ -1,5 +1,4 @@
 import React from "react";
-import { numbercounter } from "@/utilities/number-counter";
 
 interface NumberCounterProps {
     id: number;
@@ -10,12 +9,10 @@ interface NumberCounterProps {
 
 const NumberCounter = ({ id, number, sign, text }: NumberCounterProps) => {
     return (
-        <div className="">
+        <div className="number-counter-component">
             <div key={id}>
-                <p>
-                    {number + sign}
-                </p>
-                <p>{text}</p>
+                <p className="number-counter-component__number-display">{number + sign}</p>
+                <p className="number-counter-component__text-display">{text}</p>
             </div>
         </div>
     );
