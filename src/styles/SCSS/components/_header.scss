@@ -51,6 +51,12 @@
                 li {
                     &:hover {
                         color: #888;
+                        &::after {
+                            display: flex;
+                            content: "";
+                            width: 100%;
+                            border: 1px solid black;
+                        }
                     }
                 }
             }
@@ -64,6 +70,5 @@
         @media screen and (max-width: 768px) {
             display: none;
         }
-        
     }
 }

@@ -95,6 +95,12 @@ h1 {
 .header-div .header-middle ul div li:hover {
   color: #888;
 }
+.header-div .header-middle ul div li:hover::after {
+  display: flex;
+  content: "";
+  width: 100%;
+  border: 1px solid black;
+}
 .header-div .header-end {
   width: -moz-fit-content;
   width: fit-content;
