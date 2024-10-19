@@ -1,8 +1,9 @@
 import Image from "next/image";
 import React from "react";
+import { images } from "@/utilities/benefits-card";
 
 interface CardProps {
-    images: string;
+    images: {id: number; src: string;}[];
     title: string;
     text: string;
 }
