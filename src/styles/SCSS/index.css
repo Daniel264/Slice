@@ -553,4 +553,9 @@ h5 {
   height: max-content;
   align-items: center;
   gap: 2.5rem;
+}
+
+.number-counter-component__number-display {
+  font-size: 4rem;
+  font-weight: 500;
 }/*# sourceMappingURL=index.css.map */

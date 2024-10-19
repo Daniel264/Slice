@@ -1,1 +1,11 @@
 
+@use "../variable/variable" as var;
+
+.number-counter-component {
+    // &__container {
+    // }
+    &__number-display {
+        font-size: var.$text-6xl;
+        font-weight: 500;
+    }
+} 
