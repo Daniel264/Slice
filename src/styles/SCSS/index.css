@@ -396,6 +396,20 @@ h1 {
 .range-component > *:not(:last-child) {
   margin-right: 2rem;
 }
+@media screen and (max-width: 1024px) {
+  .range-component {
+    width: -moz-max-content;
+    width: max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .range-component div:nth-of-type(2),
 .range-component div:nth-of-type(1) {
   width: 100%;
@@ -408,9 +422,20 @@ h1 {
 }
 .range-component div:nth-of-type(2) {
   background: var(--background-color);
+  width: 1150px;
   height: 21rem;
   border-radius: 2rem;
   border: 1px solid #e2dfdf;
+}
+@media screen and (max-width: 1024px) {
+  .range-component div:nth-of-type(2) {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .range-component div:nth-of-type(2) {
+    width: 330px;
+  }
 }
 
 h1 {

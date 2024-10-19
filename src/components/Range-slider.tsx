@@ -16,7 +16,7 @@ const StyledInput = styled.input`
     outline:none;
     width: 20%;
     font-size: 4.5rem;
-    text-align: center;
+    // text-align: center;
     color: #D7D9CE;
     // opacity: 30;
     font-weight: bold;
@@ -110,7 +110,7 @@ const RangeSlider: React.FC = () => {
                 <StyledInputText>Capitale Investito</StyledInputText>
                 <StyledInputText>$25,000</StyledInputText>
             </HigherPlaceHolder>
-            <StyledRange type="range" min={0} max={100} value={value} onChange={handleChange} className="range-slider rating" />
+            <StyledRange type="range" min={0} max={10000} value={value} onChange={handleChange} className="range-slider rating" />
             <PlaceHolder>
                 <StyledInputText>I tuol interessi dopo 5 anni</StyledInputText>
                 <DollarTag>$</DollarTag>
