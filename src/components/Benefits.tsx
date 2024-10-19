@@ -6,7 +6,7 @@ import { images } from "@/utilities/benefits-card";
 
 export const Benefits = () => {
     return (
-        <section className="badge-component">
+        <section className="benefits-component">
             <div>
                 <Badge>Benefits</Badge>
                 <h1>

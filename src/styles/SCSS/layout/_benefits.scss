@@ -1,7 +1,8 @@
-@use '../components/badge' as bad;
-@use '../components/hero' as *;
+@use "../components/badge" as bad;
+// @use "../components/hero" as *;
+@use "../mixins/mixins" as *;
 
-
-.badge-component {
-    // @include hero
+.benefits-component {
+    // @include her o
+    @include align-center(100%, 100%, column);
 }
