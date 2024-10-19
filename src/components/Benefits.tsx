@@ -1,4 +1,4 @@
-import { works } from "@/utilities/yellow-text";
+import { benefits, works } from "@/utilities/yellow-text";
 import { Badge } from "./Badge"
 import { HeroSection } from "./Hero-section-Template";
 
@@ -12,7 +12,7 @@ export const Benefits = () => {
                 </h1>
 
                 <div>
-                    <HeroSection flexDirection={"row"} designedText={false} src={"/assets/images/third-section.svg"} arrayName={works} />
+                    <HeroSection flexDirection={"row"} designedText={false} src={"/assets/images/third-section.svg"} arrayName={benefits} />
                 </div>
             </div>
         </section>

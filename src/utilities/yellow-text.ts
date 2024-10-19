@@ -11,8 +11,8 @@ export const works = [
 ];
 
 export const benefits = [
-    { id: 1, text: "Start without the need for large sums" },
-    { id: 2, text: "Forget about operational management" },
-    { id: 3, text: "Get liquidity in 3 months" },
-    { id: 4, text: "Benefit from diversification" },
+    { src: "/assets/images/sums.svg", id: 1, text: "Start without the need for large sums" },
+    { src: "/assets/images/share.svg", id: 2, text: "Forget about operational management" },
+    { src: "/assets/images/sync.svg", id: 3, text: "Get liquidity in 3 months" },
+    { src: "/assets/images/pin.svg", id: 4, text: "Benefit from diversification" },
 ];
