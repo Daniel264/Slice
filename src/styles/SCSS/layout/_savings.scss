@@ -3,5 +3,8 @@
 .savings-wrapper {
     article {
         display: flex;
+        height: max-content;
+        align-items: center;
+        gap: 2.5rem;
     }
 }
