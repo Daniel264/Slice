@@ -143,6 +143,14 @@ h1 {
     padding: 4px 12px;
   }
 }
+.yellow-container .map-div .text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.yellow-container .map-div .yellow-title {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
 .yellow-container .map-div .yellow-text {
   font-weight: 500;
 }
@@ -205,8 +213,8 @@ h1 {
     left: 4.7rem;
   }
 }
-.hero-section div:nth-of-type(1) div:nth-of-type(3) {
-  padding-bottom: 3rem;
+.hero-section div:nth-of-type(1) div:last-child {
+  padding-bottom: 1rem;
 }
 .hero-section div:nth-of-type(2) .hero-img {
   border-radius: 2rem;

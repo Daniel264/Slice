@@ -6,7 +6,7 @@ interface HeroProps {
     flexDirection: string;
     designedText: boolean;
     src: string;
-    arrayName: { src: string; id: number; text: string }[];
+    arrayName: { src: string; id: number; title?: string; text: string }[];
     showImage?: boolean;
 }
 

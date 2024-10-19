@@ -1,4 +1,5 @@
 @use "../mixins/mixins" as mix;
+@use "../variable/variable" as var;
 
 .yellow-container {
     @include mix.space-y(40px);
@@ -29,6 +30,16 @@
             }
         }
 
+        .text-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .yellow-title {
+            // display: block;
+            font-weight: 800;
+            font-size: var.$text-xl;
+        }
         .yellow-text {
             font-weight: 500;
         }
