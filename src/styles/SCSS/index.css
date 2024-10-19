@@ -558,4 +558,24 @@ h5 {
 .number-counter-component__number-display {
   font-size: 4rem;
   font-weight: 500;
+  animation: counter 5s infinite alternate ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 40px Manrope, sans-serif;
+}
+.number-counter-component__number-display::after {
+  content: counter(num);
+}
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+@keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 100;
+  }
 }/*# sourceMappingURL=index.css.map */

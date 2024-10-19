@@ -3,6 +3,7 @@ import styled from "styled-components";
 import NumberCounter from "./NumberCounter";
 import { numbercounter } from "@/utilities/number-counter";
 
+
 const StyledSpan = styled.span`
     color: #737373;
     display: block;
