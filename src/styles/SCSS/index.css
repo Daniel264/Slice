@@ -545,4 +545,8 @@ h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.savings-wrapper article {
+  display: flex;
 }/*# sourceMappingURL=index.css.map */
