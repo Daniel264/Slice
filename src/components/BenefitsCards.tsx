@@ -3,20 +3,22 @@ import React from "react";
 import { images } from "@/utilities/benefits-card";
 
 interface CardProps {
-    images: {id: number; src: string;}[];
-    title: string;
-    text: string;
+    images: { id: number; src: string; title: string; text: string }[];
 }
 
-const BenefitsCards = ({ images, title, text }: CardProps) => {
+const BenefitsCards = ({ images }: CardProps) => {
     return (
-        <div>
-            <Image src={images} alt={""} width={100} height={100} />
+        <>
+            {images.map((image) => (
+                <div key={image.id}>
+                    <Image src={image.src} alt={""} width={100} height={100} />
 
-            <h3>{title}</h3>
+                    <h3>{image.title}</h3>
 
-            <p>{text}</p>
-        </div>
+                    <p>{image.text}</p>
+                </div>
+            ))}
+        </>
     );
 };
 
