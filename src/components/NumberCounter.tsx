@@ -11,12 +11,12 @@ interface NumberCounterProps {
 const NumberCounter = ({ id, number, sign, text }: NumberCounterProps) => {
     return (
         <div>
-            {numbercounter.map((item) => (
-                <div key={item.id}>
-                    <p>{item.number} + {item.text}</p>
-                    <p>{item.text}</p>
-                </div>
-            ))}
+            <div key={id}>
+                <p>
+                    {number} + {text}
+                </p>
+                <p>{text}</p>
+            </div>
         </div>
     );
 };

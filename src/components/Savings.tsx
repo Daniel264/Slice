@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import NumberCounter from "./NumberCounter";
 
 const StyledSpan = styled.span`
     color: #737373;
@@ -41,7 +42,9 @@ const Savings = () => {
                 </p>
             </article>
 
-            <article></article>
+            <article>
+                <NumberCounter id={0} number={0} sign={""} text={""} />
+            </article>
         </SavingsWrapper>
     );
 };
