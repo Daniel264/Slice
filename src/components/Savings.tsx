@@ -5,9 +5,25 @@ const StyledSpan = styled.span`
     color: #737373;
 `;
 
+const SavingsWrapper = styled.section`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 rem;
+    margin-top: 5rem;
+
+    article {
+        h1 {
+        @media screen and (max-width: 768px) {
+        
+        font-size: 2.5rem;
+        }
+    }
+`;
+
 const Savings = () => {
     return (
-        <section>
+        <SavingsWrapper>
             <article>
                 <h1>
                     <StyledSpan>Optimise your return rate</StyledSpan> and retain more of your income
@@ -19,7 +35,7 @@ const Savings = () => {
             </article>
 
             <article></article>
-        </section>
+        </SavingsWrapper>
     );
 };
 
