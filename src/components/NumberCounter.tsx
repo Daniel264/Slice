@@ -10,10 +10,10 @@ interface NumberCounterProps {
 
 const NumberCounter = ({ id, number, sign, text }: NumberCounterProps) => {
     return (
-        <div>
+        <div className="">
             <div key={id}>
                 <p>
-                    {number} + {text}
+                    {number + sign}
                 </p>
                 <p>{text}</p>
             </div>
