@@ -28,6 +28,11 @@ $text-9xl: 8rem;
 h1 {
     @include semibold-header(line-height);
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+        font-size: $text-3xl;
+        
+    }
 }
 
 h2 {

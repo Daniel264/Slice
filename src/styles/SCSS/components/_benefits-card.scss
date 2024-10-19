@@ -2,27 +2,32 @@
 
 .benefits-card {
     display: flex;
-    @include space-x(2rem);
-    @include align-center(100%, max-content, row);
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
     margin-top: 50px;
-
-    @media screen and (max-width: 768px) {
-        flex-direction: column;
+    @media screen and (max-width: 1024px) {
+        display: grid;
+        // flex-direction: column;
+        grid-template: 1fr 1fr / 1fr 1fr;
         gap: 2rem;
-        @include space-x(0rem);
     }
 
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
 
     div {
         background: var(--section-color);
         border-radius: 2rem;
         padding: 1rem 2rem 1rem 1rem;
         width: 20%;
-        height: 295px;
+        min-height: 295px;
 
         @media screen and (max-width: 1024px) {
             width: 100%;
-            
         }
 
         img {

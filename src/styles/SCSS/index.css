@@ -462,27 +462,23 @@ h1 {
 
 .benefits-card {
   display: flex;
-  display: flex;
-  width: 100%;
-  height: -moz-max-content;
-  height: max-content;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  gap: 2rem;
   align-items: center;
+  justify-content: center;
   margin-top: 50px;
 }
-.benefits-card > *:not(:last-child) {
-  margin-right: 2rem;
+@media screen and (max-width: 1024px) {
+  .benefits-card {
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr;
+    gap: 2rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .benefits-card {
+    display: flex;
     flex-direction: column;
     gap: 2rem;
-    display: flex;
-  }
-  .benefits-card > *:not(:last-child) {
-    margin-right: 0rem;
   }
 }
 .benefits-card div {
@@ -490,7 +486,7 @@ h1 {
   border-radius: 2rem;
   padding: 1rem 2rem 1rem 1rem;
   width: 20%;
-  height: 295px;
+  min-height: 295px;
 }
 @media screen and (max-width: 1024px) {
   .benefits-card div {
@@ -507,6 +503,11 @@ h1 {
   font-style: normal;
   line-height: line-height;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.875rem;
+  }
 }
 
 h2 {
