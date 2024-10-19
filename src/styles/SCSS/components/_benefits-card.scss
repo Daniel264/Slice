@@ -1,0 +1,21 @@
+@use "../mixins/mixins" as *;
+
+.benefits-card {
+    display: flex;
+    @include space-x(2rem);
+    @include align-center(100%, max-content, row);
+    margin-top: 50px;
+
+
+    div {
+        background: var(--section-color);
+        border-radius: 2rem;
+        padding: 1rem 2rem 1rem 1rem;
+        width: 20%;
+        height: 295px;
+
+        img {
+            padding-bottom: 3rem;
+        }
+    }
+}

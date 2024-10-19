@@ -446,6 +446,32 @@ h1 {
   }
 }
 
+.benefits-card {
+  display: flex;
+  display: flex;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.benefits-card > *:not(:last-child) {
+  margin-right: 2rem;
+}
+.benefits-card div {
+  background: var(--section-color);
+  border-radius: 2rem;
+  padding: 1rem 2rem 1rem 1rem;
+  width: 20%;
+  height: 295px;
+}
+.benefits-card div img {
+  padding-bottom: 3rem;
+}
+
 h1 {
   font-size: 4rem;
   font-weight: 600;

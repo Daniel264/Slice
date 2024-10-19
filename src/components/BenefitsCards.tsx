@@ -8,7 +8,7 @@ interface CardProps {
 
 const BenefitsCards = ({ images }: CardProps) => {
     return (
-        <>
+        <section className="benefits-card">
             {images.map((image) => (
                 <div key={image.id}>
                     <Image src={image.src} alt={""} width={100} height={100} />
@@ -18,7 +18,7 @@ const BenefitsCards = ({ images }: CardProps) => {
                     <p>{image.text}</p>
                 </div>
             ))}
-        </>
+        </section>
     );
 };
 
