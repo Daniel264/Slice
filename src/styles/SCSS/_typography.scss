@@ -19,19 +19,18 @@ $text-9xl: 8rem;
 }
 
 @mixin semibold-header($line-height: 1rem) {
-    font-size: $text-6xl;
+    font-size: $text-5xl;
     font-weight: 600;
     font-style: normal;
     line-height: $line-height;
 }
 
 h1 {
-    @include semibold-header(line-height);
+    @include semibold-header(3.6rem);
     text-align: center;
 
     @media screen and (max-width: 768px) {
         font-size: $text-3xl;
-        
     }
 }
 

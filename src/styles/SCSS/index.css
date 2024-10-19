@@ -498,10 +498,10 @@ h1 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   font-style: normal;
-  line-height: line-height;
+  line-height: 3.6rem;
   text-align: center;
 }
 @media screen and (max-width: 768px) {

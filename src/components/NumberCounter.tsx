@@ -10,7 +10,6 @@ interface NumberCounterProps {
 
 const NumberCounter = ({ id, number, sign, text }: NumberCounterProps) => {
     const numberRef = useRef<HTMLParagraphElement>(null);
-    const [formattedNumber, setFormattedNumber] = useState<string>("");
 
     useEffect(() => {
         if (numberRef.current) {
