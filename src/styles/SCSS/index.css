@@ -475,12 +475,27 @@ h1 {
 .benefits-card > *:not(:last-child) {
   margin-right: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .benefits-card {
+    flex-direction: column;
+    gap: 2rem;
+    display: flex;
+  }
+  .benefits-card > *:not(:last-child) {
+    margin-right: 0rem;
+  }
+}
 .benefits-card div {
   background: var(--section-color);
   border-radius: 2rem;
   padding: 1rem 2rem 1rem 1rem;
   width: 20%;
   height: 295px;
+}
+@media screen and (max-width: 1024px) {
+  .benefits-card div {
+    width: 100%;
+  }
 }
 .benefits-card div img {
   padding-bottom: 3rem;

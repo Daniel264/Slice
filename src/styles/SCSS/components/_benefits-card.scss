@@ -6,6 +6,12 @@
     @include align-center(100%, max-content, row);
     margin-top: 50px;
 
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 2rem;
+        @include space-x(0rem);
+    }
+
 
     div {
         background: var(--section-color);
@@ -13,6 +19,11 @@
         padding: 1rem 2rem 1rem 1rem;
         width: 20%;
         height: 295px;
+
+        @media screen and (max-width: 1024px) {
+            width: 100%;
+            
+        }
 
         img {
             padding-bottom: 3rem;
