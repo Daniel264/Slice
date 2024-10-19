@@ -228,6 +228,10 @@ h1 {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  transition: ease-out 0.3s;
+  outline: none;
+  box-shadow: inset 0 0 0 0 #f7f7f7;
+  width: 195px;
 }
 .butn:hover {
   color: var(--primary-color);
@@ -237,6 +241,10 @@ h1 {
   content: "";
   width: 100%;
   border: 1px solid black;
+}
+
+.butn:hover {
+  box-shadow: inset 195px 0 0 0 #f7f7f7;
 }
 
 .white_butn {
