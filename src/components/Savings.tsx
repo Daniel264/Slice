@@ -33,7 +33,7 @@ const SavingsWrapper = styled.section`
 `;
 
 const Savings = () => {
-    const [ref, isVisible] = IntersectionObserver({ threshold: 0.1 });
+    const [ref, isVisible] = IntersectionObserver({ threshold: 0 });
     return (
         <SavingsWrapper className="savings-wrapper">
             <article>
@@ -45,14 +45,14 @@ const Savings = () => {
                     Secure premium profits. We seamlessly provide you <br /> with the highest returns. Keep up to an extra <br /> 17.6% after taxes. some of your earnings could <br /> be exempt from local and city taxes.
                 </p>
             </article>
-
-            {isVisible && (
+{/* 
+            {isVisible && ( */}
                 <article ref={ref}>
                     {numbercounter.map((item) => (
                         <NumberCounter key={item.id} id={0} number={item.number} sign={item.sign} text={item.text} />
                     ))}
                 </article>
-            )}
+            {/* )} */}
         </SavingsWrapper>
     );
 };

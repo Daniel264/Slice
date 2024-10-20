@@ -548,12 +548,26 @@ h5 {
   align-items: center;
 }
 
-.savings-wrapper article {
+.savings-wrapper article:nth-of-type(1),
+.savings-wrapper :nth-of-type(2) {
   display: flex;
   height: -moz-max-content;
   height: max-content;
   align-items: center;
-  gap: 2.5rem;
+  gap: 4.5rem;
+}
+.savings-wrapper article:nth-of-type(1) {
+  border-bottom: 1px solid var(--text-color);
+  padding-bottom: 2rem;
+}
+.savings-wrapper article:nth-of-type(2) {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .number-counter-component__number-display {

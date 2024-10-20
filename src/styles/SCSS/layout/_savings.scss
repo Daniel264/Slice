@@ -1,10 +1,21 @@
-
+@use "../variable/variable" as var;
+@use "../mixins/mixins" as *;
 
 .savings-wrapper {
-    article {
+    article:nth-of-type(1),
+    :nth-of-type(2) {
         display: flex;
         height: max-content;
         align-items: center;
-        gap: 2.5rem;
+        gap: 4.5rem;
+    }
+
+    article:nth-of-type(1) {
+        border-bottom: 1px solid var(--text-color);
+        padding-bottom: 2rem;
+    }
+
+    article:nth-of-type(2) {
+        @include align-center(100%, max-content, row);
     }
 }
