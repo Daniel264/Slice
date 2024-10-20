@@ -510,6 +510,10 @@ h1 {
   }
 }
 
+p {
+  font-weight: 600;
+}
+
 h2 {
   font-size: 3.3rem;
   line-height: 3.5rem;

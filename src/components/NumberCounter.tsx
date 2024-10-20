@@ -14,7 +14,7 @@ const NumberCounter = ({ id, number, sign, text }: NumberCounterProps) => {
     useEffect(() => {
         if (numberRef.current) {
             const options = {
-                decimalPlaces: 2,
+                decimalPlaces: 1,
                 duration: 5,
             };
             let countUp = new CountUp(numberRef.current, number, options);
