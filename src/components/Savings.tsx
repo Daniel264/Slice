@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import NumberCounter from "./NumberCounter";
 import { numbercounter } from "@/utilities/number-counter";
-
+import IntersectionObserver from "./IntersectionObserver";
 
 const StyledSpan = styled.span`
     color: #737373;
@@ -33,6 +33,7 @@ const SavingsWrapper = styled.section`
 `;
 
 const Savings = () => {
+    const [ref, isVisible] = IntersectionObserver({ threshold: 0.1 });
     return (
         <SavingsWrapper className="savings-wrapper">
             <article>
@@ -45,11 +46,13 @@ const Savings = () => {
                 </p>
             </article>
 
-            <article>
-                {numbercounter.map((item) => (
-                    <NumberCounter key={item.id} id={0} number={item.number} sign={item.sign} text={item.text} />
-                ))}
-            </article>
+            {isVisible && (
+                <article ref={ref}>
+                    {numbercounter.map((item) => (
+                        <NumberCounter key={item.id} id={0} number={item.number} sign={item.sign} text={item.text} />
+                    ))}
+                </article>
+            )}
         </SavingsWrapper>
     );
 };
