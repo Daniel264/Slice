@@ -188,6 +188,7 @@ h1 {
 .hero-section div:nth-of-type(1) div:nth-of-type(1) h1 {
   font-size: 3.95rem;
   font-weight: 700;
+  line-height: 5rem;
   padding-bottom: 1.6rem;
 }
 @media screen and (max-width: 768px) {
