@@ -31,6 +31,7 @@
                 font-size: 3.95rem;
                 font-weight: 700;
                 line-height: 5rem;
+                text-align: left;
                 padding-bottom: 1.6rem;
 
                 @media screen and (max-width: 768px) {
@@ -38,23 +39,24 @@
                 }
                 @media screen and (max-width: 450px) {
                     font-size: var.$text-4xl;
+                    line-height: 3rem;
                 }
             }
 
             img.round-img{
                 position: absolute;
-                top: 4.5rem;
+                top: 3rem;
                 left: -2.3rem;
 
                 @media screen and (max-width: 768px) {
                     width: 16rem;
-                    top: 10.9rem;
-                    left: 4.2rem;
+                    top: 2.9rem;
+                    left: -1rem;
                 }
                 @media screen and (max-width: 450px) {
                     width: 12rem;
-                    top: 10.6rem;
-                    left: 4.7rem;
+                    top: 1.2rem;
+                    left: -1.6rem;
                 }
             }
         }
