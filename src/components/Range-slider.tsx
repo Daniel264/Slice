@@ -11,19 +11,20 @@ const SliderContainer = styled.div`
 `;
 
 const StyledInput = styled.input`
+    text-align: center;
     margin: 10px 0;
     border: none;
-    outline:none;
-    width: 20%;
+    outline: none;
+    width: 40%;
     font-size: 4.5rem;
     // text-align: center;
-    color: #D7D9CE;
+    color: #d7d9ce;
     // opacity: 30;
     font-weight: bold;
 `;
 
 const StyledInputText = styled.span`
-
+    padding-right: 1rem;
     font-size: 1rem;
     display: flex;
     font-weight: 800;
@@ -39,7 +40,7 @@ const StyledRange = styled.input`
     background: #ddd;
     outline: none;
     opacity: 1;
-    transition: opacity .2s;
+    transition: opacity 0.2s;
 
     &:hover {
         opacity: 1;
@@ -51,7 +52,7 @@ const StyledRange = styled.input`
         width: 35px;
         height: 35px;
         background: #000;
-         border-radius: 2rem;
+        border-radius: 2rem;
         cursor: pointer;
     }
 
@@ -64,10 +65,11 @@ const StyledRange = styled.input`
 `;
 
 const DollarTag = styled.span`
-    color: #D7D9CE;
+    text-align: right;
+    color: #d7d9ce;
     font-size: 5rem;
     font-weight: 700;
-    padding-left: 8rem;
+    padding-left: 0rem;
 `;
 const PlaceHolder = styled.section`
     width: 100%;
@@ -114,7 +116,7 @@ const RangeSlider: React.FC = () => {
             <PlaceHolder>
                 <StyledInputText>I tuol interessi dopo 5 anni</StyledInputText>
                 <DollarTag>$</DollarTag>
-                <StyledInput type="number" value={value} onChange={handleChange} />
+                <StyledInput type="number" value={value} defaultValue={1000} onChange={handleChange} />
             </PlaceHolder>
             <LowerPlaceHolder>
                 <StyledInputText>Valore futuro</StyledInputText>

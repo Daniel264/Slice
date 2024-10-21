@@ -373,7 +373,8 @@ h1 {
 }
 .second-hero img.straight-image {
   position: absolute;
-  top: 5.6rem;
+  top: 4.6rem;
+  left: 9rem;
 }
 
 .range-container {

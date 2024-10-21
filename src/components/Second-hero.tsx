@@ -15,7 +15,7 @@ export const SecondHero = () => {
                     Invest in income-generating <br /> real estate easily
                 </h1>
             </div>
-            <div>
+            <div className="second-hero">
                 <HeroSection flexDirection={"row-reverse"} designedText={false} src={"/assets/images/section-img.svg"} arrayName={works} />
             </div>
         </section>
