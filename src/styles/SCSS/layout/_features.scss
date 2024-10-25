@@ -1,4 +1,4 @@
-@use '../mixins/mixins' as *;
+@use "../mixins/mixins" as *;
 
 .features_component {
     @include align-center(100%, 100vh, column);
@@ -14,7 +14,18 @@
             padding: 1.4rem 2rem;
             border-radius: 1.3rem;
             background: var(--section-color);
-    
+
+            .features_image {
+                background: var(--secondary-color);
+                width: 80px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 85px;
+                align-items: center;
+                padding: 0;
+            }
+
             h4 {
                 font-weight: 600;
                 font-size: 1.7rem;
