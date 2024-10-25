@@ -1,5 +1,6 @@
 import { Benefits } from "@/components/Benefits";
 import { CompaniesCarousel } from "@/components/CompaniesCarousel";
+import Features from "@/components/Features";
 import Header from "@/components/Header";
 import { HeroSection } from "@/components/Hero-section-Template";
 import RangeSlider from "@/components/Range-slider";
@@ -8,7 +9,6 @@ import Savings from "@/components/Savings";
 import { SecondHero } from "@/components/Second-hero";
 import SEO from "@/components/SEO";
 import { tickText, works } from "@/utilities/yellow-text";
-
 
 export default function Home() {
     return (
@@ -26,6 +26,7 @@ export default function Home() {
                 <RangeComponent />
                 <Benefits />
                 <Savings />
+                <Features />
             </main>
         </>
     );

@@ -116,7 +116,7 @@ const RangeSlider: React.FC = () => {
             <PlaceHolder>
                 <StyledInputText>I tuol interessi dopo 5 anni</StyledInputText>
                 <DollarTag>$</DollarTag>
-                <StyledInput type="number" value={value} defaultValue={1000} onChange={handleChange} />
+                <StyledInput type="number" value={value} onChange={handleChange} />
             </PlaceHolder>
             <LowerPlaceHolder>
                 <StyledInputText>Valore futuro</StyledInputText>
