@@ -1,2 +1,28 @@
+@use '../mixins/mixins' as *;
 
+.features_component {
+    @include align-center(100%, 100vh, column);
+    .features_title {
+        text-align: center;
+        padding-bottom: 50px;
+    }
 
+    .features_content {
+        display: flex;
+        gap: 65px;
+        div {
+            padding: 1.4rem 2rem;
+            border-radius: 1.3rem;
+            background: var(--section-color);
+    
+            h4 {
+                font-weight: 600;
+                font-size: 1.7rem;
+            }
+
+            p {
+                color: var(--text-color);
+            }
+        }
+    }
+}
