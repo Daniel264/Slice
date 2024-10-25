@@ -3,12 +3,14 @@ import { Badge } from "./Badge";
 
 const Features = () => {
     return (
-        <section>
-            <Badge>Features</Badge>
-            <h1>
-                Real estate is the <br /> cornerstone to build <br /> your wealth.
-            </h1>
-            <div>
+        <section className="features_component">
+            <div className="features_title">
+                <Badge>Features</Badge>
+                <h1>
+                    Real estate is the <br /> cornerstone to build <br /> your wealth.
+                </h1>
+            </div>
+            <div className="features_content">
                 <div>
                     <h4>Improved stability</h4>
                     <p>
