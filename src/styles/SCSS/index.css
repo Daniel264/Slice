@@ -47,8 +47,8 @@ h1 {
   gap: 2px;
   width: -moz-fit-content;
   width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -61,8 +61,8 @@ h1 {
 .header-div .header-middle {
   width: -moz-fit-content;
   width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -104,8 +104,8 @@ h1 {
 .header-div .header-end {
   width: -moz-fit-content;
   width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -283,8 +283,8 @@ h1 {
   border-radius: 2rem;
   padding: 2rem 0;
   width: 80%;
-  height: -moz-fit-content;
-  height: fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -297,8 +297,8 @@ h1 {
 @media screen and (max-width: 768px) {
   .companies-description {
     width: 100%;
-    height: -moz-fit-content;
-    height: fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -316,8 +316,8 @@ h1 {
   white-space: nowrap;
   width: -moz-fit-content;
   width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -354,8 +354,8 @@ h1 {
 }
 .badge-div {
   width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -379,8 +379,8 @@ h1 {
 
 .range-container {
   width: 50%;
-  height: -moz-fit-content;
-  height: fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -389,8 +389,8 @@ h1 {
 @media screen and (max-width: 768) {
   .range-container {
     width: 50%;
-    height: -moz-fit-content;
-    height: fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -426,8 +426,8 @@ h1 {
   .range-component {
     width: -moz-max-content;
     width: max-content;
-    height: -moz-max-content;
-    height: max-content;
+    min-height: -moz-max-content;
+    min-height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -442,8 +442,8 @@ h1 {
 }
 .range-component div:nth-of-type(2) {
   width: 100%;
-  height: -moz-max-content;
-  height: max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -551,7 +551,7 @@ h5 {
 
 .benefits-component {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -572,8 +572,8 @@ h5 {
 }
 .savings-wrapper article:nth-of-type(2) {
   width: 100%;
-  height: -moz-max-content;
-  height: max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -587,11 +587,16 @@ h5 {
 
 .features_component {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .features_component {
+    min-height: 100vh;
+  }
 }
 .features_component .features_title {
   text-align: center;
@@ -600,6 +605,11 @@ h5 {
 .features_component .features_content {
   display: flex;
   gap: 65px;
+}
+@media screen and (max-width: 768px) {
+  .features_component .features_content {
+    flex-direction: column;
+  }
 }
 .features_component .features_content div {
   padding: 1.4rem 2rem;

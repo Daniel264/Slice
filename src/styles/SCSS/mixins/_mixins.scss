@@ -23,7 +23,7 @@
 
 @mixin align-center($width: 100%, $height, $flex-direction) {
     width: $width;
-    height: $height;
+    min-height: $height;
     display: flex;
     flex-direction: $flex-direction;
     justify-content: center;
