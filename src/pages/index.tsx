@@ -3,6 +3,7 @@ import { CompaniesCarousel } from "@/components/CompaniesCarousel";
 import Features from "@/components/Features";
 import Header from "@/components/Header";
 import { HeroSection } from "@/components/Hero-section-Template";
+import Questions from "@/components/Questions";
 import RangeSlider from "@/components/Range-slider";
 import { RangeComponent } from "@/components/RangeComponent";
 import Savings from "@/components/Savings";
@@ -27,6 +28,7 @@ export default function Home() {
                 <Benefits />
                 <Savings />
                 <Features />
+                <Questions />
             </main>
         </>
     );

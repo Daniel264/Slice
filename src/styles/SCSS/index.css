@@ -634,4 +634,22 @@ h5 {
 }
 .features_component .features_content div p {
   color: var(--text-color);
+}
+
+.questions_section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.questions_section p {
+  color: var(--text-color);
+}
+.questions_section__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100fr);
+  gap: 2rem;
+  grid-template-rows: repeat(2, 100fr);
 }/*# sourceMappingURL=index.css.map */
