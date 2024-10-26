@@ -661,4 +661,21 @@ h5 {
 .questions_section__grid div h4 {
   font-size: 1.6rem;
   font-weight: 600;
+}
+.questions_section__lower-container {
+  width: 90%;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: var(--section-color);
+  justify-content: space-between;
+  display: flex;
+  border-radius: 2rem;
+  padding: 45px;
+}
+.questions_section__lower-container h2 {
+  padding-bottom: 20px;
 }/*# sourceMappingURL=index.css.map */

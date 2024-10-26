@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "./Button";
 
 const Questions = () => {
     return (
@@ -51,6 +52,15 @@ const Questions = () => {
                     </p>
                 </div>
             </div>
+            <article className="questions_section__lower-container">
+                <div>
+                    <h2>Still got questions?</h2>
+                    <p>If you don&apos;t find an answer to your question, contact us, and our team will get in <br /> touch with you.</p>
+                </div>
+                <div>
+                    <Button buttonType="butn">Get in touch</Button>
+                </div>
+            </article>
         </section>
     );
 };

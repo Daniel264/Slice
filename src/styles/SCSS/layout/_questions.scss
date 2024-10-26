@@ -27,4 +27,17 @@
             }
         }
     }
+
+    &__lower-container {
+        @include align-center(90%, fit-content, row);
+        background: var(--section-color);
+        justify-content: space-between;
+        display: flex;
+        border-radius: 2rem;
+        padding: 45px;
+
+        h2 {
+            padding-bottom: 20px;
+        }
+    }
 }
