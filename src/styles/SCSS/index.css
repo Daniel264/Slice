@@ -647,9 +647,16 @@ h5 {
 .questions_section p {
   color: var(--text-color);
 }
+.questions_section__top_text {
+  font-size: 1.35rem;
+}
 .questions_section__grid {
   display: grid;
   grid-template-columns: repeat(3, 100fr);
   gap: 2rem;
   grid-template-rows: repeat(2, 100fr);
+}
+.questions_section__grid div h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
 }/*# sourceMappingURL=index.css.map */
