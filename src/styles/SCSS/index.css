@@ -586,6 +586,7 @@ h5 {
 .number-counter-component__number-display {
   font-size: 4rem;
   font-weight: 500;
+  color: #000000;
 }
 
 .features_component {

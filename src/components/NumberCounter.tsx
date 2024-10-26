@@ -35,7 +35,7 @@ const NumberCounter = ({ id, number, sign, text }: NumberCounterProps) => {
     return (
         <div className="number-counter-component">
             <div key={id} style={{ "--num": number } as React.CSSProperties} className="number-counter-component__container">
-                <p ref={numberRef} className="number-counter-component__number-display"></p>
+                <h3 ref={numberRef} className="number-counter-component__number-display"></h3>
                 <p className="number-counter-component__text-display">{text}</p>
             </div>
         </div>
