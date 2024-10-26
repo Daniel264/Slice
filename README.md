@@ -1,9 +1,8 @@
 <img src="public/assets/logo/icon.svg" height="100" width="100">
 
-# nextjs-boilertemplate
+# Slice
 
-Description of the project goes here.
-
+This is a website I built for Fintech Startups to showcase their innovative solutions tailored to meet the evolving needs of their clients.
 ---
 
 ## Setup & usage
@@ -11,13 +10,13 @@ Description of the project goes here.
 **1. Install all dependencies**
 
 ```bash
-yarn install
+npm/yarn install
 ```
 
 **2. Run the development server**
 
 ```bash
-yarn dev
+yarn dev or npm run dev
 ```
 
 **3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.**
@@ -45,8 +44,5 @@ The same prettier config will be used for code formatting. It should be automati
 ### Learn More
 
 To learn more about Next.js, take a look at the following resources:
-
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 _official policy: it is fOrBiddEn to bring down production with your PRs !!_
