@@ -1,4 +1,5 @@
 @use "../mixins/mixins" as *;
+@use "../components/badge";
 
 .features_component {
     @include align-center(100%, 100vh, column);
@@ -12,7 +13,7 @@
 
     .features_content {
         display: flex;
-        gap: 65px;
+        gap: 35px;
 
         @media screen and (max-width: 768px) {
             flex-direction: column;

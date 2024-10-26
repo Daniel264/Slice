@@ -6,7 +6,9 @@ const Features = () => {
     return (
         <section className="features_component">
             <div className="features_title">
-                <Badge>Features</Badge>
+                <div className="badge-div">
+                    <Badge>Features</Badge>
+                </div>
                 <h1>
                     Real estate is the <br /> cornerstone to build <br /> your wealth.
                 </h1>
