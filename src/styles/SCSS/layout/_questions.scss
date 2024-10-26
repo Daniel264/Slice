@@ -3,6 +3,7 @@
 
 .questions_section {
     @include align-center(100%, 100vh, column);
+    gap: 2rem;
 
     p {
         color: var(--text-color);
@@ -10,6 +11,7 @@
 
     &__top_text {
         font-size: var.$text-2xl;
+        padding-bottom: 40px;
     }
 
     &__grid {

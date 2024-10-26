@@ -643,12 +643,14 @@ h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 .questions_section p {
   color: var(--text-color);
 }
 .questions_section__top_text {
   font-size: 1.35rem;
+  padding-bottom: 40px;
 }
 .questions_section__grid {
   display: grid;
