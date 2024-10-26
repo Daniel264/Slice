@@ -9,9 +9,12 @@ const Features = () => {
                 <div className="badge-div">
                     <Badge>Features</Badge>
                 </div>
-                <h1>
-                    Real estate is the <br /> cornerstone to build <br /> your wealth.
-                </h1>
+                <div className="image-div">
+                    <h1>
+                        Real estate is the <br /> cornerstone to build <br /> your wealth.
+                    </h1>
+                    <Image className="linethrough-image" src="/assets/images/linethrough.svg" alt="Image of a line" width={300} height={300} />
+                </div>
             </div>
             <div className="features_content">
                 <div>

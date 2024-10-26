@@ -9,6 +9,14 @@
     .features_title {
         text-align: center;
         padding-bottom: 50px;
+
+        .image-div {
+            position: relative;
+            .linethrough-image {
+                position: absolute;
+                left: 95px;
+            }
+        }
     }
 
     .features_content {

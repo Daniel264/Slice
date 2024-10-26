@@ -602,6 +602,13 @@ h5 {
   text-align: center;
   padding-bottom: 50px;
 }
+.features_component .features_title .image-div {
+  position: relative;
+}
+.features_component .features_title .image-div .linethrough-image {
+  position: absolute;
+  left: 95px;
+}
 .features_component .features_content {
   display: flex;
   gap: 35px;
