@@ -558,6 +558,9 @@ h5 {
   align-items: center;
 }
 
+.savings-wrapper p {
+  color: var(--text-color);
+}
 .savings-wrapper article:nth-of-type(1),
 .savings-wrapper :nth-of-type(2) {
   display: flex;
