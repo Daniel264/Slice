@@ -26,12 +26,13 @@ const H2Text = styled.h2`
 const SavingsWrapper = styled.section`
 
     display: flex;
+    width: 90%;
     flex-direction: column;
     justify-content: space-between;
     height: max-content;
     padding: 2rem;
     margin-top: 5rem;
-    border: 1px solid #888;
+    border: 1px solid #D4D4D4;
     border-radius: 2rem;
 
     article {

@@ -238,22 +238,19 @@ h1 {
   cursor: pointer;
   transition: background-color 0.3s ease;
   transition: ease-out 0.3s;
-  outline: none;
+  outline: 3px solid black;
   box-shadow: inset 0 0 0 0 #f7f7f7;
   width: 195px;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
 }
 .butn:hover {
   color: var(--primary-color);
 }
-.butn:hover::after {
-  display: flex;
-  content: "";
-  width: 100%;
-  border: 1px solid black;
-}
 
 .butn:hover {
-  box-shadow: inset 195px 0 0 0 #f7f7f7;
+  box-shadow: inset 0 -60px 0 0 #f7f7f7;
 }
 
 .white_butn {
@@ -267,12 +264,6 @@ h1 {
 }
 .white_butn:hover {
   color: var(--primary-color);
-}
-.white_butn:hover::after {
-  display: flex;
-  content: "";
-  width: 100%;
-  border: 1px solid black;
 }
 
 .companies-description {

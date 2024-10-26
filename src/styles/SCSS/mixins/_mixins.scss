@@ -12,12 +12,12 @@
         // background: $hover;
         color: var(--primary-color);
 
-        &::after {
-            display: flex;
-            content: "";
-            width: 100%;
-            border: 1px solid black;
-        }
+        // &::after {
+        //     display: flex;
+        //     content: "";
+        //     width: 100%;
+        //     border: 1px solid black;
+        // }
     }
 }
 
