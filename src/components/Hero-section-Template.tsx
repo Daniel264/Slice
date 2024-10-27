@@ -33,7 +33,7 @@ export const HeroSection = ({ flexDirection = "row", designedText, src, arrayNam
                 </div>
             </div>
             <div>
-                <Image src={src} alt={""} width={580} height={500} className="hero-img" />
+                <Image src={src} priority alt={""} width={580} height={500} className="hero-img" />
             </div>
             {/* <video src="/assets/images/vlc.mp4" /> */}
         </section>
