@@ -1,6 +1,7 @@
 import { YellowText } from "./Yellow-text";
 import Image from "next/image";
 import { Button } from "./Button";
+import { motion } from "framer-motion";
 
 interface HeroProps {
     flexDirection: string;
@@ -14,7 +15,26 @@ export const HeroSection = ({ flexDirection = "row", designedText, src, arrayNam
     return (
         <section className={`hero-section ${flexDirection === "row-reverse" ? "flex-row-reverse" : "flex-row"}`}>
             <div>
-                <div>
+                <motion.div
+                    initial={{
+                        y: 80,
+                        x: 20,
+                        opacity: 0,
+                    }}
+                    whileInView={{
+                        y: 0,
+                        x: 0,
+                        opacity: 1,
+                        transition: {
+                            duration: 0.8,
+                            ease: [0.44, 0, 0, 1],
+                        },
+                    }}
+                    viewport={{
+                        amount: "some",
+                        once: true,
+                    }}
+                >
                     {designedText && (
                         <h1>
                             Get Real Estate <br />
@@ -23,7 +43,7 @@ export const HeroSection = ({ flexDirection = "row", designedText, src, arrayNam
                         </h1>
                     )}
                     {showImage && <Image src={"/assets/images/round-text.svg"} alt={""} width={280} height={100} className="round-img" />}
-                </div>
+                </motion.div>
 
                 <div>
                     <YellowText array={arrayName} />
