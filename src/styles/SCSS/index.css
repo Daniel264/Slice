@@ -122,6 +122,9 @@
   html {
     font-family: "Segoe UI Regular", "Manrope", "Satoshi-Variable", sans-serif;
   }
+  h1 {
+    font-family: "Segoe UI Bold", "Manrope", sans-serif;
+  }
   /* Daisy UI Resets */
   /* =========================== */
   input[type=number]::-webkit-inner-spin-button,
