@@ -35,7 +35,6 @@ export const HeroSection = ({ flexDirection = "row", designedText, src, arrayNam
             <div>
                 <Image src={src} priority alt={""} width={580} height={500} className="hero-img" />
             </div>
-            {/* <video src="/assets/images/vlc.mp4" /> */}
         </section>
     );
 };

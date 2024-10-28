@@ -28,11 +28,5 @@ export const CompaniesCarousel = () => {
                 ))}
             </div>
         </div>
-
-        //First Duplicate Array
-        //<Image src={company.img} alt={company.title />
-
-        //Second Duplicate Array
-        //<Image src={company.img} alt={company.title />
     );
 };

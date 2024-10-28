@@ -1,4 +1,4 @@
-import { benefits, works } from "@/utilities/yellow-text";
+import { benefits} from "@/utilities/yellow-text";
 import { Badge } from "./Badge";
 import { HeroSection } from "./Hero-section-Template";
 import BenefitsCards from "./BenefitsCards";
