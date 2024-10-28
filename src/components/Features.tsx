@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Features = () => {
     return (
-        <section className="features_component">
+        <section data-section="cinq" className="features_component">
             <div className="features_title">
                 <div className="badge-div">
                     <Badge>Features</Badge>

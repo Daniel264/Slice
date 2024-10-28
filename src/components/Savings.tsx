@@ -47,7 +47,7 @@ const SavingsWrapper = styled.section`
 const Savings = () => {
     const [ref, isVisible] = IntersectionObserver({ threshold: 0 });
     return (
-        <SavingsWrapper className="savings-wrapper">
+        <SavingsWrapper data-section="quatre" className="savings-wrapper">
             <AlignText>
                 <div className="badge-div">
                     <Badge>Savings</Badge>

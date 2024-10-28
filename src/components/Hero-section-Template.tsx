@@ -13,7 +13,7 @@ interface HeroProps {
 
 export const HeroSection = ({ flexDirection = "row", designedText, src, arrayName, showImage }: HeroProps) => {
     return (
-        <section className={`hero-section ${flexDirection === "row-reverse" ? "flex-row-reverse" : "flex-row"}`}>
+        <section data-section="une" className={`hero-section ${flexDirection === "row-reverse" ? "flex-row-reverse" : "flex-row"}`}>
             <div>
                 <motion.div
                     initial={{

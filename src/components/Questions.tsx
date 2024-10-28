@@ -3,7 +3,7 @@ import { Button } from "./Button";
 
 const Questions = () => {
     return (
-        <section className="questions_section">
+        <section data-section="six" className="questions_section">
             <h1>FAQs</h1>
             <p className="questions_section__top_text">
                 All details about the item and its function can be found here. <br />
@@ -55,7 +55,9 @@ const Questions = () => {
             <article className="questions_section__lower-container">
                 <div>
                     <h2>Still got questions?</h2>
-                    <p>If you don&apos;t find an answer to your question, contact us, and our team will get in <br /> touch with you.</p>
+                    <p>
+                        If you don&apos;t find an answer to your question, contact us, and our team will get in <br /> touch with you.
+                    </p>
                 </div>
                 <div>
                     <Button buttonType="butn">Get in touch</Button>

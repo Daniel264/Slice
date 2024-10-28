@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const SecondHero = () => {
     return (
-        <section className="second-hero">
+        <section data-section="deux" className="second-hero">
             <div className="badge-div">
                 <Badge>How does it work</Badge>
             </div>
