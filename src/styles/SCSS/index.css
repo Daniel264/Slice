@@ -602,6 +602,9 @@
 .benefits-card div img {
   padding-bottom: 3rem;
 }
+.benefits-card div h3 {
+  font-weight: 600;
+}
 
 h1 {
   font-size: 3.3rem;
@@ -617,7 +620,8 @@ h1 {
 }
 
 p {
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 
 h2 {
@@ -685,7 +689,7 @@ h5 {
 
 .number-counter-component__number-display {
   font-size: 4rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #000000;
 }
 
@@ -787,4 +791,5 @@ h5 {
 }
 .questions_section__lower-container h2 {
   padding-bottom: 20px;
+  font-weight: 600;
 }/*# sourceMappingURL=index.css.map */
