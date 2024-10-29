@@ -860,7 +860,15 @@ h5 {
   padding: 80px 100px;
   display: flex;
   width: 100%;
-  flex-direction: row;
+  flex-direction: column;
+}
+.footer_component__first_section {
+  width: 100%;
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 3rem;
+  border-bottom: 1px dashed var(--text-color);
 }
 .footer_component__logo_container {
   display: flex;
@@ -893,5 +901,23 @@ h5 {
   color: var(--text-color);
 }
 .footer_component__links article ul a:hover {
+  color: #a6a6a6;
+}
+.footer_component__second_section {
+  padding-top: 3rem;
+  color: var(--text-color);
+}
+.footer_component__second_links {
+  margin-bottom: 45px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+.footer_component__second_links ul {
+  gap: 20px;
+  display: flex;
+  font-weight: 500;
+}
+.footer_component__second_links ul a:hover {
   color: #a6a6a6;
 }/*# sourceMappingURL=index.css.map */

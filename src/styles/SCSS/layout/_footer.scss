@@ -4,7 +4,15 @@
     padding: 80px 100px;
     display: flex;
     width: 100%;
-    flex-direction: row;
+    flex-direction: column;
+
+    &__first_section {
+        width: 100%;
+        display: flex;
+        height: fit-content;
+        padding-bottom: 3rem;
+        border-bottom: 1px dashed var(--text-color);
+    }
 
     &__logo_container {
         display: flex;
@@ -41,6 +49,29 @@
                 font-weight: 500;
                 color: var(--text-color);
 
+                &:hover {
+                    color: lighten(#737373, 20%);
+                }
+            }
+        }
+    }
+
+    &__second_section {
+        padding-top: 3rem;
+        color: var(--text-color);
+    }
+    &__second_links {
+        margin-bottom: 45px;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+
+        ul {
+            gap: 20px;
+            display: flex;
+            font-weight: 500;
+
+            a {
                 &:hover {
                     color: lighten(#737373, 20%);
                 }

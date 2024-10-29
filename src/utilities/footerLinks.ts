@@ -13,3 +13,9 @@ export const secondLink = [
     { id: 4, text: "Help Center", url: "/" },
     { id: 5, text: "Updates", url: "/" },
 ];
+
+export const thirdLink = [
+    { id: 1, text: "Privacy Policy", url: "/" },
+    { id: 2, text: "Cookies", url: "/" },
+    { id: 3, text: "Terms & Conditions", url: "/" },
+];
