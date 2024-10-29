@@ -16,7 +16,7 @@ import { tickText, works } from "@/utilities/yellow-text";
 export default function Home() {
     return (
         <>
-            <SEO title="Home" />
+            <SEO title="Slice: Fintech website" />
 
             <main className="flex min-h-screen flex-col items-center p-5">
                 {/* <div className="m-auto w-full max-w-8xl"> */}

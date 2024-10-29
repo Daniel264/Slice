@@ -14,7 +14,7 @@ export default function SEO({ icon, title, keywords, description, image }: SEOPr
 
     const SITE_BASE_URL = "https://nextjs-boilertemplate.com";
 
-    const DEFAULT_ICON_URL = "/assets/logo/icon.svg";
+    const DEFAULT_ICON_URL = "/assets/logo/logo.svg";
     const DEFAULT_DESCRIPTION = "Description of the project goes here.";
 
     const SEO = {
@@ -22,7 +22,7 @@ export default function SEO({ icon, title, keywords, description, image }: SEOPr
         title: title,
         keywords: keywords || "",
         description: description || DEFAULT_DESCRIPTION,
-        image: SITE_BASE_URL + (image || "/assets/site-metaimage.png"),
+        image: SITE_BASE_URL + (image || "/assets/images/splice.png"),
         url: SITE_BASE_URL + router.pathname,
     };
 
