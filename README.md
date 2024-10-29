@@ -1,4 +1,4 @@
-<img src="public/assets/images/splice.png" height="400" width="500">
+<img src="public/assets/images/splice.png" height="400" width="850">
 
 # Slice
 
