@@ -853,4 +853,44 @@ h5 {
 .getStarted_section .getStarted_article h1 {
   color: #fff;
   text-align: left;
+}
+
+.footer_component {
+  padding: 80px 100px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.footer_component__logo_container {
+  display: flex;
+  justify-content: flex-start;
+  height: -moz-max-content;
+  height: max-content;
+  align-items: flex-start;
+  width: 45%;
+}
+.footer_component__links {
+  width: 55%;
+  height: -moz-fit-content;
+  height: fit-content;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 50px;
+  display: flex;
+}
+.footer_component__links article h3 {
+  padding-bottom: 19px;
+  font-weight: 600;
+}
+.footer_component__links article ul {
+  display: flex;
+  flex-direction: column;
+}
+.footer_component__links article ul a {
+  line-height: 1.7;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.footer_component__links article ul a:hover {
+  color: #a6a6a6;
 }/*# sourceMappingURL=index.css.map */
