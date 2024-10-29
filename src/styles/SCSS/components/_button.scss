@@ -2,21 +2,20 @@
 
 .butn {
     @include button-style(black);
+    @include align-center(187px, 45px, row);
     // -webkit-appearance: checkbox !important;
     // -webkit-autofill {
     //     -webkit-box-shadow: 0 0 0 100px #f9f9f9 inset !important;
     // };
     transition: ease-out 0.3s;
     outline: 3px solid black;
-    box-shadow: inset 0 0 0 0 #f7f7f7;
-    width: 195px;
-    height: 60px; // Set a height to control the shadow effect
+    box-shadow: inset 0 0 0 0 #fff;
     position: relative;
     overflow: hidden; // To hide the shadow when it animates from the bottom
 }
 
 .butn:hover {
-    box-shadow: inset 0 -60px 0 0 #f7f7f7;
+    box-shadow: inset 0 -60px 0 0 #fff;
     // border: 2px solid #000;
 }
 

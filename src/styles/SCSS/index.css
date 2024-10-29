@@ -349,11 +349,15 @@
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 187px;
+  min-height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   transition: ease-out 0.3s;
   outline: 3px solid black;
-  box-shadow: inset 0 0 0 0 #f7f7f7;
-  width: 195px;
-  height: 60px;
+  box-shadow: inset 0 0 0 0 #fff;
   position: relative;
   overflow: hidden;
 }
@@ -362,7 +366,7 @@
 }
 
 .butn:hover {
-  box-shadow: inset 0 -60px 0 0 #f7f7f7;
+  box-shadow: inset 0 -60px 0 0 #fff;
 }
 
 .white_butn {
