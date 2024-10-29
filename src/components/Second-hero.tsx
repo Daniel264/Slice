@@ -9,9 +9,9 @@ export const SecondHero = () => {
             <div className="badge-div">
                 <Badge>How does it work</Badge>
             </div>
-            <div>
+            <div className="second-hero__header">
                 <Image className="straight-image" src={"/assets/images/Second-hero-img.svg"} alt={""} height={90} width={300} />
-                <h1>
+                <h1 className="second-hero__header-text">
                     Invest in income-generating <br /> real estate easily
                 </h1>
             </div>

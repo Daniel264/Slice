@@ -275,6 +275,7 @@
   font-weight: normal;
   font-size: 1.1rem;
   line-height: 1.6;
+  width: 25vw;
 }
 
 .hero-section {
@@ -481,6 +482,9 @@
 
 .second-hero {
   position: relative;
+}
+.second-hero__header h1 {
+  padding-bottom: 34px;
 }
 .second-hero img.straight-image {
   position: absolute;
