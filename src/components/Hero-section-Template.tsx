@@ -4,6 +4,7 @@ import { Button } from "./Button";
 import { motion } from "framer-motion";
 
 interface HeroProps {
+    padding: string;
     flexDirection: string;
     designedText: boolean;
     src: string;
@@ -11,7 +12,7 @@ interface HeroProps {
     showImage?: boolean;
 }
 
-export const HeroSection = ({ flexDirection = "row", designedText, src, arrayName, showImage }: HeroProps) => {
+export const HeroSection = ({ flexDirection = "row", designedText, src, arrayName, showImage, padding }: HeroProps) => {
     return (
         <section data-section="une" className={`hero-section ${flexDirection === "row-reverse" ? "flex-row-reverse" : "flex-row"}`}>
             <div>
@@ -45,7 +46,7 @@ export const HeroSection = ({ flexDirection = "row", designedText, src, arrayNam
                     {showImage && <Image src={"/assets/images/round-text.svg"} alt={""} width={280} height={100} className="round-img" />}
                 </motion.div>
 
-                <div className="yellow_text_array">
+                <div className={`yellow_text_array ${padding}`}>
                     <YellowText array={arrayName} />
                 </div>
                 <div>

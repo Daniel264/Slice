@@ -9,4 +9,13 @@
         left: 9rem;
         // left: 1rem;
     }
+
+    &__hero-duplicate {
+
+        @include align-center(100%, 100%, row);
+    }
+}
+
+.padding {
+    padding-top: 80px;
 }
