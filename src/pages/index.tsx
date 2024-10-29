@@ -1,6 +1,7 @@
 import { Benefits } from "@/components/Benefits";
 import { CompaniesCarousel } from "@/components/CompaniesCarousel";
 import Features from "@/components/Features";
+import GetStarted from "@/components/GetStarted";
 import Header from "@/components/Header";
 import { HeroSection } from "@/components/Hero-section-Template";
 import Questions from "@/components/Questions";
@@ -21,7 +22,7 @@ export default function Home() {
 
                 {/* <h3 className="my-5 text-5xl font-semibold">Splice</h3> */}
                 <Header />
-                <HeroSection flexDirection={"row"} designedText={true} src={"/assets/images/hero-img.svg"} arrayName={tickText} showImage={true} />
+                <HeroSection flexDirection={"row"} designedText={true} src={"/assets/images/hero-img.svg"} arrayName={tickText} showImage={true} padding={""} />
                 <CompaniesCarousel />
                 <SecondHero />
                 <RangeComponent />
@@ -29,6 +30,7 @@ export default function Home() {
                 <Savings />
                 <Features />
                 <Questions />
+                <GetStarted />
             </main>
         </>
     );
