@@ -120,7 +120,7 @@
 @layer base {
   /* Specify default font below */
   html {
-    font-family: "Segoe UI Regular", "Manrope", "Satoshi-Variable", sans-serif;
+    font-family: "Manrope", "Segoe UI Regular", "Satoshi-Variable", sans-serif;
   }
   h1 {
     font-family: "Manrope", "Segoe UI Bold", sans-serif;
@@ -353,7 +353,7 @@
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 187px;
+  width: 195px;
   min-height: 45px;
   display: flex;
   flex-direction: row;
@@ -637,11 +637,12 @@
 
 h1 {
   font-size: 3.3rem;
-  font-weight: 600;
+  font-weight: 800;
   font-style: normal;
   line-height: 3.6rem;
   text-align: center;
   letter-spacing: -0.03em;
+  font-weight: 600;
 }
 @media screen and (max-width: 768px) {
   h1 {

@@ -20,7 +20,7 @@ $text-9xl: 8rem;
 
 @mixin semibold-header($line-height: 1rem) {
     font-size: $text-5xl;
-    font-weight: 600;
+    font-weight: 800;
     font-style: normal;
     line-height: $line-height;
 }
@@ -29,6 +29,7 @@ h1 {
     @include semibold-header(3.6rem);
     text-align: center;
     letter-spacing: -0.03em;
+    font-weight: 600;
 
     @media screen and (max-width: 768px) {
         font-size: $text-3xl;

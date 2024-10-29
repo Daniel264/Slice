@@ -2,7 +2,7 @@
 
 .butn {
     @include button-style(black);
-    @include align-center(187px, 45px, row);
+    @include align-center(195px, 45px, row);
     // -webkit-appearance: checkbox !important;
     // -webkit-autofill {
     //     -webkit-box-shadow: 0 0 0 100px #f9f9f9 inset !important;
