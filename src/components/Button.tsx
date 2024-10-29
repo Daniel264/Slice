@@ -4,5 +4,9 @@ interface ButtonProps {
 }
 
 export const Button = ({ children, buttonType }: ButtonProps) => {
-    return <button className={`${buttonType}`}>{children}</button>;
+    return (
+        <button aria-label="Button" className={`${buttonType}`}>
+            {children}
+        </button>
+    );
 };
