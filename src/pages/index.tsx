@@ -11,11 +11,12 @@ import { RangeComponent } from "@/components/RangeComponent";
 import Savings from "@/components/Savings";
 import { SecondHero } from "@/components/Second-hero";
 import SEO from "@/components/SEO";
+import SmoothScrolling from "@/components/SmoothScrolling";
 import { tickText, works } from "@/utilities/yellow-text";
 
 export default function Home() {
     return (
-        <>
+        <SmoothScrolling>
             <SEO title="Slice: Fintech website" />
 
             <main className="flex min-h-screen flex-col items-center p-5">
@@ -34,6 +35,6 @@ export default function Home() {
                 <GetStarted />
                 <Footer />
             </main>
-        </>
+        </SmoothScrolling>
     );
 }
