@@ -41,7 +41,9 @@
             font-size: var.$text-xl;
         }
         .yellow-text {
-            font-weight: 500;
+            font-weight: normal;
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
     }
 }

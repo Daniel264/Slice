@@ -123,7 +123,7 @@
     font-family: "Segoe UI Regular", "Manrope", "Satoshi-Variable", sans-serif;
   }
   h1 {
-    font-family: "Segoe UI Bold", "Manrope", sans-serif;
+    font-family: "Manrope", "Segoe UI Bold", sans-serif;
   }
   /* Daisy UI Resets */
   /* =========================== */
@@ -270,7 +270,9 @@
   font-size: 1.1rem;
 }
 .yellow-container .map-div .yellow-text {
-  font-weight: 500;
+  font-weight: normal;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 .hero-section {
@@ -547,6 +549,9 @@
   text-align: left;
   margin-bottom: 20px;
 }
+.range-component div:nth-of-type(1) p {
+  width: 32vw;
+}
 .range-component div:nth-of-type(2) {
   width: 100%;
   min-height: -moz-max-content;
@@ -619,6 +624,7 @@ h1 {
   font-style: normal;
   line-height: 3.6rem;
   text-align: center;
+  letter-spacing: -0.03em;
 }
 @media screen and (max-width: 768px) {
   h1 {
@@ -629,6 +635,7 @@ h1 {
 p {
   font-weight: 500;
   font-size: 1.1rem;
+  letter-spacing: -0.03em;
 }
 
 h2 {

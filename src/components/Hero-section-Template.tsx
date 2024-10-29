@@ -45,7 +45,7 @@ export const HeroSection = ({ flexDirection = "row", designedText, src, arrayNam
                     {showImage && <Image src={"/assets/images/round-text.svg"} alt={""} width={280} height={100} className="round-img" />}
                 </motion.div>
 
-                <div>
+                <div className="yellow_text_array">
                     <YellowText array={arrayName} />
                 </div>
                 <div>

@@ -28,6 +28,7 @@ $text-9xl: 8rem;
 h1 {
     @include semibold-header(3.6rem);
     text-align: center;
+    letter-spacing: -0.03em;
 
     @media screen and (max-width: 768px) {
         font-size: $text-3xl;
@@ -37,6 +38,7 @@ h1 {
 p {
     font-weight: 500;
     font-size: $text-xl;
+    letter-spacing: -0.03em;
 }
 
 h2 {

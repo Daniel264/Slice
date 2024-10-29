@@ -7,7 +7,7 @@ export const RangeComponent = () => {
                 <h1>
                     Evaluate your <br /> potential return
                 </h1>
-                <p>
+                <p className="range_component__text">
                     Whether it&apos;s building a passive income stream 
                     through rental properties or capitalizing on 
                     property appreciation.
