@@ -8,16 +8,7 @@
     transition: background-color 0.3s ease;
 
     &:hover {
-        // background: darken($bg-color, 60%);
-        // background: $hover;
         color: var(--primary-color);
-
-        // &::after {
-        //     display: flex;
-        //     content: "";
-        //     width: 100%;
-        //     border: 1px solid black;
-        // }
     }
 }
 

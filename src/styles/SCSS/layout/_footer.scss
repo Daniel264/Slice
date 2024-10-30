@@ -23,17 +23,12 @@
     }
 
     &__links {
-        // @include mix.align-center(35%, fit-content, row);
         width: 55%;
         height: fit-content;
         flex-direction: row;
         justify-content: flex-start;
         gap: 50px;
         display: flex;
-
-        article:nth-of-type(2) {
-            // padding: 0 0rem 0 5rem;
-        }
 
         article h3 {
             padding-bottom: 19px;

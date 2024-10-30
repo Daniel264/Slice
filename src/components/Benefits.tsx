@@ -16,7 +16,7 @@ export const Benefits = () => {
                 </h1>
 
                 <div>
-                    <HeroSection flexDirection={"row"} designedText={false} src={"/assets/images/third-section.svg"} arrayName={benefits} />
+                    <HeroSection flexDirection={"row"} designedText={false} src={"/assets/images/third-section.svg"} arrayName={benefits} padding={""} />
                 </div>
             </div>
             <BenefitsCards images={images} />
