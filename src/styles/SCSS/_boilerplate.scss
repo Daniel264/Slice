@@ -173,22 +173,30 @@
 }
 
 // @font-face {
-//     font-family: "Segoe UI Bold Italic";
+//     font-family: "Neue Haas Display";
 //     font-style: normal;
-//     font-weight: normal;
+//     font-weight: medium;
 //     src:
-//         local("Segoe UI Bold Italic"),
-//         url("Segoe UI Bold Italic.woff") format("woff");
+//         local("Neue Haas Display Mediu"),
+//         url("../fonts/NeueHaasDisplayMediu.ttf") format("tff");
 // }
+
+@font-face {
+    font-family: "Neue Haas Display";
+    src: url("../fonts/NeueHaasDisplayMediu.ttf") format("truetype");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
 
 @layer base {
     /* Specify default font below */
     html {
-        font-family: "Manrope", "Segoe UI Regular", "Satoshi-Variable", sans-serif;
+        font-family: "Manrope", "Neue Haas Display", "Segoe UI Regular", "Satoshi-Variable", sans-serif;
     }
 
     h1 {
-        font-family: "Manrope", "Segoe UI Bold", sans-serif;
+        font-family: "Manrope", "Neue Haas Display", "Segoe UI Bold", sans-serif;
     }
 
     /* Daisy UI Resets */
