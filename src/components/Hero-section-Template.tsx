@@ -19,12 +19,10 @@ export const HeroSection = ({ flexDirection = "row", designedText, src, arrayNam
                 <motion.div
                     initial={{
                         y: 80,
-                        x: 20,
                         opacity: 0,
                     }}
                     whileInView={{
                         y: 0,
-                        x: 0,
                         opacity: 1,
                         transition: {
                             duration: 0.8,

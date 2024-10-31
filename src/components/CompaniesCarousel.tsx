@@ -3,14 +3,13 @@ import { Key, useMemo } from "react";
 import Image from "next/image";
 
 export const CompaniesCarousel = () => {
-
-    //Get the FirstCarousel array from utils and concatenate four of them together. 
+    //Get the FirstCarousel array from utils and concatenate four of them together.
     const firstDuplicatedArray = useMemo(() => [...FirstCarousel(), ...FirstCarousel(), ...FirstCarousel(), ...FirstCarousel()], []);
 
-    //Get the SecondCarousel array from utils and concatenate four of them together. 
+    //Get the SecondCarousel array from utils and concatenate four of them together.
     const secondDuplicatedArray = [...SecondCarousel(), ...SecondCarousel(), ...SecondCarousel(), ...SecondCarousel()];
     return (
-        <div className="companies-description">
+        <div aria-label="A company carousel animation" className="companies-description">
             <h3>Helping teams at the world&apos;s best companies</h3>
 
             <div>

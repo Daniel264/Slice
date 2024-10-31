@@ -38,12 +38,20 @@
         .yellow-title {
             // display: block;
             font-weight: 800;
-            font-size: var.$text-xl;
+            font-size: var.$text-2xl;
         }
         .yellow-text {
-            font-weight: normal;
+            font-weight: 600;
+            font-size: 1.3rem;
+            line-height: 1.6;
+            width: 32vw;
+        }
+
+        .yello-text_small-text {
+            font-weight: 600;
             font-size: 1.1rem;
             line-height: 1.6;
+            width: 32vw;
         }
     }
 }

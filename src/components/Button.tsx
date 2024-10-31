@@ -5,7 +5,7 @@ interface ButtonProps {
 
 export const Button = ({ children, buttonType }: ButtonProps) => {
     return (
-        <button aria-label="Button" className={`${buttonType}`}>
+        <button aria-label="A button with no action" className={`${buttonType}`}>
             {children}
         </button>
     );

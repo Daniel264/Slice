@@ -13,7 +13,7 @@ export const YellowText = ({ array }: TextProps) => {
 
                     <div className="text-wrapper">
                         <span className="yellow-title">{item.title}</span>
-                        <span className="yellow-text">{item.text}</span>
+                        <span className={`yellow-text`}>{item.text}</span>
                     </div>
                 </div>
             ))}

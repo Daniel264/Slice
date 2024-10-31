@@ -5,13 +5,13 @@ import { Button } from "./Button";
 
 const Header = () => {
     return (
-        <div className=" header-div">
-            <div className=" header-logo">
+        <header className=" header-div">
+            <div aria-label="Splice logo" className=" header-logo">
                 <h1 className=" logo-text">Splice</h1>
                 <Image src={"/assets/images/logo.svg"} alt={""} width={50} height={50} />
             </div>
             <div className="header-middle">
-                <ul>
+                <ul aria-label="A header navigation">
                     {Head.map((item, index) => (
                         <div key={index}>
                             <li>{item.name}</li>
@@ -23,7 +23,7 @@ const Header = () => {
                 <Button buttonType={"white_butn"}>Contact us</Button>
                 <Button buttonType={"butn"}>Get this template</Button>
             </div>
-        </div>
+        </header>
     );
 };
 

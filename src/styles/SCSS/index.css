@@ -269,12 +269,19 @@
 }
 .yellow-container .map-div .yellow-title {
   font-weight: 800;
-  font-size: 1.1rem;
+  font-size: 1.35rem;
 }
 .yellow-container .map-div .yellow-text {
-  font-weight: normal;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  width: 32vw;
+}
+.yellow-container .map-div .yello-text_small-text {
+  font-weight: 600;
   font-size: 1.1rem;
   line-height: 1.6;
+  width: 32vw;
 }
 
 .hero-section {
