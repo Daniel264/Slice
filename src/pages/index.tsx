@@ -32,7 +32,7 @@ export default function Home() {
                 {/* <Savings /> */}
                 <Features />
                 {/* <Questions /> */}
-                {/* <GetStarted /> */}
+                <GetStarted />
                 <Footer />
             </main>
         </SmoothScrolling>
