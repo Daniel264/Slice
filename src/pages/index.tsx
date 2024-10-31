@@ -27,13 +27,13 @@ export default function Home() {
                 <HeroSection flexDirection={"row"} designedText={true} src={"/assets/images/hero-img.svg"} arrayName={tickText} showImage={true} padding={""} />
                 <CompaniesCarousel />
                 <SecondHero />
-                <RangeComponent />
-                {/* <Benefits /> */}
+                {/* <RangeComponent /> */}
+                <Benefits />
                 {/* <Savings /> */}
-                {/* <Features />
-                <Questions />
-                <GetStarted />
-                <Footer /> */}
+                <Features />
+                {/* <Questions /> */}
+                {/* <GetStarted /> */}
+                {/* <Footer /> */}
             </main>
         </SmoothScrolling>
     );

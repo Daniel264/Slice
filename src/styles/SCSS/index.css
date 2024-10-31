@@ -864,7 +864,20 @@ h5 {
 }
 .features_component .features_title .image-div .linethrough-image {
   position: absolute;
-  left: 95px;
+  left: 0px;
+  top: 40px;
+  width: 230px;
+}
+@media (min-width: 768px) {
+  .features_component .features_title .image-div .linethrough-image {
+    left: 95px;
+    width: 400px;
+  }
+}
+@media (min-width: 992px) {
+  .features_component .features_title .image-div .linethrough-image {
+    left: 25px;
+  }
 }
 .features_component .features_content {
   display: flex;
