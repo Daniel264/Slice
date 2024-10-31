@@ -576,8 +576,8 @@
 .second-hero img.straight-image {
   position: absolute;
   top: 4.125rem;
-  left: 4rem;
-  width: 220px;
+  left: 1.8rem;
+  width: 180px;
 }
 @media (min-width: 768px) {
   .second-hero img.straight-image {
