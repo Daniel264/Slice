@@ -15,29 +15,46 @@
     }
 
     h3 {
-        font-size: var.$text-xl;
-        font-weight: 700;
+        font-weight: 600;
+        font-size: var.$text-lg;
+        line-height: 1.6;
+
+        @include respond-to("sm") {
+            font-size: var.$text-xl;
+            font-weight: 600;
+        }
+        @include respond-to("lg") {
+            font-size: var.$text-xl;
+            font-weight: 700;
+        }
     }
 
     div:nth-of-type(1),
-    div:nth-of-type(2)
-    {
-        
+    div:nth-of-type(2) {
         display: flex;
-        gap: 9rem;
+        gap: 5rem;
         white-space: nowrap;
         @include align-center(fit-content, fit-content, row);
         animation: slide 20s linear infinite;
 
-        @media screen and (max-width: 768px) {
-            gap: 3rem;
+        @include respond-to("sm") {
+            gap: 11rem;
+        }
+        
+        @include respond-to("lg") {
+            gap: 9rem;    
         }
 
-        div {
-            width: 7rem;
 
-            @media screen and (max-width: 768px) {
-                width: 4.6rem;
+        div {
+            width: 4rem;
+
+            @include respond-to("sm") {
+                width: 7rem;
+            }
+
+            @include respond-to("md") {
+                width: 9rem;
             }
         }
     }

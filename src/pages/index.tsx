@@ -25,11 +25,11 @@ export default function Home() {
                 {/* <h3 className="my-5 text-5xl font-semibold">Splice</h3> */}
                 <Header />
                 <HeroSection flexDirection={"row"} designedText={true} src={"/assets/images/hero-img.svg"} arrayName={tickText} showImage={true} padding={""} />
-                {/* <CompaniesCarousel />
-                <SecondHero />
-                <RangeComponent />
-                <Benefits />
-                <Savings /> */}
+                <CompaniesCarousel />
+                {/* <SecondHero /> */}
+                {/* <RangeComponent /> */}
+                {/* <Benefits /> */}
+                {/* <Savings /> */}
                 {/* <Features />
                 <Questions />
                 <GetStarted />
