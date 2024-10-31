@@ -1,17 +1,31 @@
 @use "../mixins/mixins" as mix;
+@use "../variable/variable" as var;
 
 .footer_component {
-    padding: 80px 100px;
+    padding: 35px;
     display: flex;
-    width: 100%;
     flex-direction: column;
+    
+    @include mix.respond-to("md") {
+        padding: 80px 100px;
+        width: 100%;
+
+    }
 
     &__first_section {
-        width: 100%;
         display: flex;
-        height: fit-content;
-        padding-bottom: 3rem;
-        border-bottom: 1px dashed var(--text-color);
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        
+        @include mix.respond-to("md") {
+            width: 100%;
+            flex-direction: row;
+            height: fit-content;
+            padding-bottom: 3rem;
+            border-bottom: 1px dashed var(--text-color);
+
+        }
     }
 
     &__logo_container {
@@ -23,12 +37,18 @@
     }
 
     &__links {
-        width: 55%;
-        height: fit-content;
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 50px;
         display: flex;
+        flex-direction: column;
+        
+        @include mix.respond-to("md") {
+            width: 55%;
+            height: fit-content;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 50px;
+            display: flex;
+
+        }
 
         article h3 {
             padding-bottom: 19px;
@@ -58,19 +78,38 @@
     &__second_links {
         margin-bottom: 45px;
         width: 100%;
-        justify-content: space-between;
         display: flex;
+        flex-direction: column;
+        
+        @include mix.respond-to("md") {
+            justify-content: space-between;
+            flex-direction: row;
+
+        }
 
         ul {
             gap: 20px;
             display: flex;
+            flex-direction: column;
             font-weight: 500;
+
+            @include mix.respond-to("md") {
+                flex-direction: row;
+            }
 
             a {
                 &:hover {
                     color: lighten(#737373, 20%);
                 }
             }
+        }
+    }
+
+    &__second_text {
+        font-size: var.$text-md;
+
+        @include mix.respond-to("md") {
+            font-size: var.$text-lg;
         }
     }
 

@@ -33,7 +33,7 @@ export default function Home() {
                 <Features />
                 {/* <Questions /> */}
                 {/* <GetStarted /> */}
-                {/* <Footer /> */}
+                <Footer />
             </main>
         </SmoothScrolling>
     );

@@ -983,18 +983,31 @@ h5 {
 }
 
 .footer_component {
-  padding: 80px 100px;
+  padding: 35px;
   display: flex;
-  width: 100%;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .footer_component {
+    padding: 80px 100px;
+    width: 100%;
+  }
+}
 .footer_component__first_section {
-  width: 100%;
   display: flex;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding-bottom: 3rem;
-  border-bottom: 1px dashed var(--text-color);
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .footer_component__first_section {
+    width: 100%;
+    flex-direction: row;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 3rem;
+    border-bottom: 1px dashed var(--text-color);
+  }
 }
 .footer_component__logo_container {
   display: flex;
@@ -1005,13 +1018,19 @@ h5 {
   width: 45%;
 }
 .footer_component__links {
-  width: 55%;
-  height: -moz-fit-content;
-  height: fit-content;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 50px;
   display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .footer_component__links {
+    width: 55%;
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 50px;
+    display: flex;
+  }
 }
 .footer_component__links article h3 {
   padding-bottom: 19px;
@@ -1036,14 +1055,34 @@ h5 {
 .footer_component__second_links {
   margin-bottom: 45px;
   width: 100%;
-  justify-content: space-between;
   display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .footer_component__second_links {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 .footer_component__second_links ul {
   gap: 20px;
   display: flex;
+  flex-direction: column;
   font-weight: 500;
+}
+@media (min-width: 768px) {
+  .footer_component__second_links ul {
+    flex-direction: row;
+  }
 }
 .footer_component__second_links ul a:hover {
   color: #a6a6a6;
+}
+.footer_component__second_text {
+  font-size: 0.65rem;
+}
+@media (min-width: 768px) {
+  .footer_component__second_text {
+    font-size: 0.85rem;
+  }
 }/*# sourceMappingURL=index.css.map */
