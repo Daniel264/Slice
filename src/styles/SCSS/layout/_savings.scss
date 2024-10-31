@@ -17,11 +17,12 @@
     }
 
     article:nth-of-type(1) {
-        border-bottom: 1px solid var(--text-color);
+        border-bottom: 1px dashed rgb(212, 212, 212);
         padding-bottom: 2rem;
     }
 
     article:nth-of-type(2) {
+        padding-top: 2rem;
         @include align-center(100%, max-content, row);
     }
 }

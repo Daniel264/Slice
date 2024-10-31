@@ -30,9 +30,9 @@ const SavingsWrapper = styled.section`
     flex-direction: column;
     justify-content: space-between;
     height: max-content;
-    padding: 2rem;
+    padding: 4.5rem 2rem;
     margin-top: 5rem;
-    border: 1px solid #D4D4D4;
+    border: 1px dashed #D4D4D4;
     border-radius: 2rem;
 
     article {
