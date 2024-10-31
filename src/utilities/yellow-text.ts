@@ -8,6 +8,7 @@ export const works = [
     { src: "", id: 1, text: "Create your profile in 3 minutes" },
     { src: "", id: 2, text: "Invest in our real estate portfolio" },
     { src: "", id: 3, text: "View the trend of collected rents and appreciation" },
+    { src: "", id: 4, text: "Request redemption every 3 months, or reinvest your earnings" },
 ];
 
 export const benefits = [
