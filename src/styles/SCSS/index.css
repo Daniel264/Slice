@@ -145,18 +145,22 @@
 
 .header-div {
   display: flex;
-  height: 4.2rem;
+  height: 5.2rem;
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 10;
   padding: 0.25rem 1rem;
   margin-bottom: 1.3rem;
-  border-bottom: 1px solid var(--text-color);
+  border-bottom: 1px solid #e2dfdf;
 }
 .header-div .header-logo {
   display: flex;
   cursor: pointer;
-  gap: 2px;
+  gap: 2.5rem;
   width: -moz-fit-content;
   width: fit-content;
   min-height: -moz-fit-content;
@@ -165,10 +169,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-.header-div .header-logo .logo-text {
-  font-weight: 700;
-  font-size: 1.875rem;
 }
 .header-div .header-middle {
   width: -moz-fit-content;
