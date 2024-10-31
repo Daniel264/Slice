@@ -33,7 +33,8 @@ h1 {
     font-family: "Manrope", "Neue Haas Display SemiBold", "Segoe UI Regular", "Satoshi-Variable", sans-serif;
     
     @media screen and (max-width: 768px) {
-        font-size: $text-3xl;
+        font-size: $text-4xl;
+        line-height: 1.3;
     }
 }
 

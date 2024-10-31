@@ -566,12 +566,25 @@
   position: relative;
 }
 .second-hero__header h1 {
-  padding-bottom: 34px;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .second-hero__header h1 {
+    padding-bottom: 34px;
+  }
 }
 .second-hero img.straight-image {
   position: absolute;
-  top: 4.6rem;
-  left: 9rem;
+  top: 4.125rem;
+  left: 4rem;
+  width: 220px;
+}
+@media (min-width: 768px) {
+  .second-hero img.straight-image {
+    position: absolute;
+    top: 4.6rem;
+    left: 9rem;
+  }
 }
 .second-hero__hero-duplicate {
   width: 100%;
@@ -583,7 +596,12 @@
 }
 
 .padding {
-  padding-top: 80px;
+  padding-top: 0px;
+}
+@media (min-width: 992px) {
+  .padding {
+    padding-top: 60px;
+  }
 }
 
 .range-container {
@@ -730,7 +748,8 @@ h1 {
 }
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 1.875rem;
+    font-size: 2.25rem;
+    line-height: 1.3;
   }
 }
 

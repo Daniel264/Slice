@@ -1,25 +1,37 @@
-@use "../mixins/mixins" as *;
+@use "../mixins/mixins" as mix;
 
 .second-hero {
     position: relative;
 
     &__header {
         h1 {
-            padding-bottom: 34px;
+            padding-bottom: 20px;
+            @include mix.respond-to("md") {
+                padding-bottom: 34px;
+            }
         }
     }
     img.straight-image {
         position: absolute;
-        top: 4.6rem;
-        left: 9rem;
-        // left: 1rem;
+        top: 4.125rem;
+        left: 4rem;
+        width: 220px;
+
+        @include mix.respond-to("md") {
+            position: absolute;
+            top: 4.6rem;
+            left: 9rem;
+        }
     }
 
     &__hero-duplicate {
-        @include align-center(100%, 100%, row);
+        @include mix.align-center(100%, 100%, row);
     }
 }
 
 .padding {
-    padding-top: 80px;
+    padding-top: 0px;
+    @include mix.respond-to("lg") {
+        padding-top: 60px;
+    }
 }

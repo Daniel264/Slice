@@ -26,7 +26,7 @@ export default function Home() {
                 <Header />
                 <HeroSection flexDirection={"row"} designedText={true} src={"/assets/images/hero-img.svg"} arrayName={tickText} showImage={true} padding={""} />
                 <CompaniesCarousel />
-                {/* <SecondHero /> */}
+                <SecondHero />
                 {/* <RangeComponent /> */}
                 {/* <Benefits /> */}
                 {/* <Savings /> */}
