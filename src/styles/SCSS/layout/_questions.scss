@@ -29,12 +29,18 @@
     }
 
     &__lower-container {
-        @include align-center(90%, fit-content, row);
+        @include align-center(100%, fit-content, column);
         background: var(--section-color);
-        justify-content: space-between;
-        display: flex;
-        border-radius: 2rem;
+        gap: 30px;
         padding: 45px;
+        border-radius: 2rem;
+
+        @include respond-to("md") {
+            @include align-center(90%, fit-content, row);
+            justify-content: space-between;
+            gap: 0px;
+
+        }
 
         h2 {
             padding-bottom: 20px;

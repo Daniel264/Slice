@@ -31,7 +31,7 @@ export default function Home() {
                 <Benefits />
                 {/* <Savings /> */}
                 <Features />
-                {/* <Questions /> */}
+                <Questions />
                 <GetStarted />
                 <Footer />
             </main>
