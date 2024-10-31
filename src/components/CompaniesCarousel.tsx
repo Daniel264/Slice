@@ -9,7 +9,13 @@ export const CompaniesCarousel = () => {
     //Get the SecondCarousel array from utils and concatenate four of them together.
     const secondDuplicatedArray = [...SecondCarousel(), ...SecondCarousel(), ...SecondCarousel(), ...SecondCarousel()];
     return (
-        <div aria-label="A company carousel animation" className="companies-description">
+        <div
+            aria-label="A company carousel animation"
+            className="companies-description"
+            style={{
+                maskImage: "linear-gradient(to right, rgba(0, 0, 0, 0) 5%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 90%, rgba(0, 0, 0, 0) 95%)",
+            }}
+        >
             <h3>Helping teams at the world&apos;s best companies</h3>
 
             <div>
