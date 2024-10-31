@@ -20,7 +20,8 @@
         @include mix.respond-to("md") {
             position: absolute;
             top: 4.6rem;
-            left: 9rem;
+            left: 15rem;
+            width: 320px;
         }
     }
 

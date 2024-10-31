@@ -583,7 +583,8 @@
   .second-hero img.straight-image {
     position: absolute;
     top: 4.6rem;
-    left: 9rem;
+    left: 15rem;
+    width: 320px;
   }
 }
 .second-hero__hero-duplicate {

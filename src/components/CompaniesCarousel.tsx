@@ -13,7 +13,7 @@ export const CompaniesCarousel = () => {
             aria-label="A company carousel animation"
             className="companies-description"
             style={{
-                maskImage: "linear-gradient(to right, rgba(0, 0, 0, 0) 5%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 90%, rgba(0, 0, 0, 0) 95%)",
+                maskImage: "linear-gradient(to right, rgba(0, 0, 0, 0) 15%, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0) 85%)",
             }}
         >
             <h3>Helping teams at the world&apos;s best companies</h3>
