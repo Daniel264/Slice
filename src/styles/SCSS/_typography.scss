@@ -1,6 +1,6 @@
 $text-sm: 0.4rem;
 $text-md: 0.65rem;
-$text-lg: 0.85rem;
+$text-lg: 0.95rem;
 $text-xl: 1.1rem;
 $text-2xl: 1.35rem;
 $text-3xl: 1.875rem;
@@ -37,8 +37,8 @@ h1 {
 }
 
 p {
-    font-weight: 500;
-    font-size: $text-xl;
+    font-weight: 600;
+    font-size: $text-lg;
     letter-spacing: -0.03em;
 }
 
