@@ -118,9 +118,30 @@
   src: local("Segoe UI Bold"), url("../fonts/Segoe UI Bold.woff") format("woff");
 }
 @font-face {
-  font-family: "Neue Haas Display";
+  font-family: "Neue Haas Display Medium";
   src: url("../fonts/NeueHaasDisplayMediu.ttf") format("truetype");
   font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Haas Display Light";
+  src: url("../fonts/NeueHaasDisplayThin.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Haas Display Bold";
+  src: url("../fonts/NeueHaasDisplayBold.ttf") format("truetype");
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Haas Display SemiBold";
+  src: url("../fonts/NeueHaasDisplayBlack.ttf") format("truetype");
+  font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
@@ -657,6 +678,7 @@ h1 {
   text-align: center;
   letter-spacing: -0.03em;
   font-weight: 600;
+  font-family: "Manrope", "Neue Haas Display SemiBold", "Segoe UI Regular", "Satoshi-Variable", sans-serif;
 }
 @media screen and (max-width: 768px) {
   h1 {
@@ -668,6 +690,7 @@ p {
   font-weight: 600;
   font-size: 0.95rem;
   letter-spacing: -0.03em;
+  font-family: "Manrope", "Neue Haas Display Light", "Segoe UI Regular", "Satoshi-Variable", sans-serif;
 }
 
 h2 {

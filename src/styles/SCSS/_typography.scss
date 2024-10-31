@@ -30,7 +30,8 @@ h1 {
     text-align: center;
     letter-spacing: -0.03em;
     font-weight: 600;
-
+    font-family: "Manrope", "Neue Haas Display SemiBold", "Segoe UI Regular", "Satoshi-Variable", sans-serif;
+    
     @media screen and (max-width: 768px) {
         font-size: $text-3xl;
     }
@@ -40,6 +41,8 @@ p {
     font-weight: 600;
     font-size: $text-lg;
     letter-spacing: -0.03em;
+    font-family: "Manrope", "Neue Haas Display Light", "Segoe UI Regular", "Satoshi-Variable", sans-serif;
+
 }
 
 h2 {
