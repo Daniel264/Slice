@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Footer = () => {
     return (
-        <footer className="footer_component">
+        <footer aria-label="You are now in the footer section of the page" className="footer_component">
             <div className="footer_component__first_section">
                 <div className="footer_component__logo_container">
                     <Image src="/assets/logo/logo.svg" alt="Image of the Splice logo" width={200} height={100} />
