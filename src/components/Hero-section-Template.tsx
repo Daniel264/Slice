@@ -2,6 +2,11 @@ import { YellowText } from "./Yellow-text";
 import Image from "next/image";
 import { Button } from "./Button";
 import { motion } from "framer-motion";
+// import gsap from "gsap";
+// import { SplitText } from "gsap/all";
+
+// gsap.registerPlugin(SplitText);
+// let mySplitText = new SplitText(".split", { type: "chars" });
 
 interface HeroProps {
     padding: string;

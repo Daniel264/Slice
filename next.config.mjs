@@ -43,5 +43,13 @@ export default withSentryConfig(
         // https://docs.sentry.io/product/crons/
         // https://vercel.com/docs/cron-jobs
         automaticVercelMonitors: true,
+        // webpack: (config) => {
+        //     config.module.rules.push({
+        //       test: /\.js$/,
+        //       use: 'imports-loader',
+        //     });
+        //     return config;
+        //   },
+        
     }
 );
