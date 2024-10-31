@@ -27,7 +27,7 @@ export default function Home() {
                 <HeroSection flexDirection={"row"} designedText={true} src={"/assets/images/hero-img.svg"} arrayName={tickText} showImage={true} padding={""} />
                 <CompaniesCarousel />
                 <SecondHero />
-                {/* <RangeComponent /> */}
+                <RangeComponent />
                 {/* <Benefits /> */}
                 {/* <Savings /> */}
                 {/* <Features />

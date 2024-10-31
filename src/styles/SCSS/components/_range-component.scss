@@ -24,7 +24,13 @@
         }
 
         p {
-            width: 32vw;
+            text-align: center;
+            width: 82vw;
+
+            @include respond-to("sm") {
+                text-align: left;
+                width: 32vw;
+            }
         }
     }
 

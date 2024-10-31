@@ -669,7 +669,14 @@
   margin-bottom: 20px;
 }
 .range-component div:nth-of-type(1) p {
-  width: 32vw;
+  text-align: center;
+  width: 82vw;
+}
+@media (min-width: 576px) {
+  .range-component div:nth-of-type(1) p {
+    text-align: left;
+    width: 32vw;
+  }
 }
 .range-component div:nth-of-type(2) {
   width: 100%;
