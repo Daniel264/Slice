@@ -48,14 +48,12 @@
 
             @include mix.respond-to("sm") {
                 font-weight: 600;
-                font-size: 1.3rem;
                 line-height: 1.6;
             }
             @include mix.respond-to("md") {
                 font-weight: 600;
-                font-size: 1.3rem;
+                font-size: 1.1rem;
                 line-height: 1.6;
-                width: 32vw;
             }
             @include mix.respond-to("lg") {
                 font-weight: 600;

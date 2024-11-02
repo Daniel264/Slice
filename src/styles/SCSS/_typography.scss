@@ -30,8 +30,8 @@ h1 {
     text-align: center;
     letter-spacing: -0.03em;
     font-weight: 600;
-    font-family: "Manrope", "Neue Haas Display SemiBold", "Segoe UI Regular", "Satoshi-Variable", sans-serif;
-    
+    font-family: "Manrope", "Neue Montreal Bold", "Neue Haas Display SemiBold", "Segoe UI Regular", "Satoshi-Variable", sans-serif;
+
     @media screen and (max-width: 768px) {
         font-size: $text-4xl;
         line-height: 1.3;
@@ -41,9 +41,7 @@ h1 {
 p {
     font-weight: 600;
     font-size: $text-lg;
-    letter-spacing: -0.03em;
-    font-family: "Manrope", "Neue Haas Display Light", "Segoe UI Regular", "Satoshi-Variable", sans-serif;
-
+    font-family: "Manrope", "Neue Montreal Regular", "Neue Haas Display Light", "Segoe UI Regular", "Satoshi-Variable", sans-serif;
 }
 
 h2 {

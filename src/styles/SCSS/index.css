@@ -145,10 +145,38 @@
   font-display: swap;
   font-style: normal;
 }
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("../fonts/NeueMontreal-Light.otf");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Montreal Bold";
+  src: url("../fonts/NeueMontreal-Bold.otf");
+  font-weight: 600 800;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Montreal Regular";
+  src: url("../fonts/NeueMontreal-Regular.otf");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Montreal Medium";
+  src: url("../fonts/NeueMontreal-Medium.otf");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
 @layer base {
   /* Specify default font below */
   html {
-    font-family: "Manrope", "Neue Haas Display", "Segoe UI Regular", "Satoshi-Variable", sans-serif;
+    font-family: "Manrope", "Neue Montreal Medium", "Neue Haas Display", "Segoe UI Regular", "Satoshi-Variable", sans-serif;
   }
   h1 {
     font-family: "Manrope", "Neue Haas Display", "Segoe UI Bold", sans-serif;
@@ -308,16 +336,14 @@
 @media (min-width: 576px) {
   .yellow-container .map-div .yellow-text {
     font-weight: 600;
-    font-size: 1.3rem;
     line-height: 1.6;
   }
 }
 @media (min-width: 768px) {
   .yellow-container .map-div .yellow-text {
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 1.6;
-    width: 32vw;
   }
 }
 @media (min-width: 992px) {
@@ -343,7 +369,7 @@
 .hero-section.flex-row {
   flex-direction: row;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .hero-section.flex-row {
     flex-direction: column;
   }
@@ -752,7 +778,7 @@ h1 {
   text-align: center;
   letter-spacing: -0.03em;
   font-weight: 600;
-  font-family: "Manrope", "Neue Haas Display SemiBold", "Segoe UI Regular", "Satoshi-Variable", sans-serif;
+  font-family: "Manrope", "Neue Montreal Bold", "Neue Haas Display SemiBold", "Segoe UI Regular", "Satoshi-Variable", sans-serif;
 }
 @media screen and (max-width: 768px) {
   h1 {
@@ -764,8 +790,7 @@ h1 {
 p {
   font-weight: 600;
   font-size: 0.95rem;
-  letter-spacing: -0.03em;
-  font-family: "Manrope", "Neue Haas Display Light", "Segoe UI Regular", "Satoshi-Variable", sans-serif;
+  font-family: "Manrope", "Neue Montreal Regular", "Neue Haas Display Light", "Segoe UI Regular", "Satoshi-Variable", sans-serif;
 }
 
 h2 {
@@ -919,23 +944,46 @@ h5 {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  padding: 60px 0px;
 }
 .questions_section p {
   color: var(--text-color);
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .questions_section p {
+    text-align: left;
+  }
 }
 .questions_section__top_text {
   font-size: 1.35rem;
   padding-bottom: 40px;
 }
 .questions_section__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 100fr);
-  gap: 2rem;
-  grid-template-rows: repeat(2, 100fr);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .questions_section__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100fr);
+    gap: 2rem;
+    grid-template-rows: repeat(2, 100fr);
+  }
 }
 .questions_section__grid div h4 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 600;
+  padding-bottom: 10px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .questions_section__grid div h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: left;
+  }
 }
 .questions_section__lower-container {
   width: 100%;
@@ -966,6 +1014,12 @@ h5 {
 .questions_section__lower-container h2 {
   padding-bottom: 20px;
   font-weight: 600;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .questions_section__lower-container h2 {
+    text-align: left;
+  }
 }
 
 .getStarted_section {

@@ -4,9 +4,15 @@
 .questions_section {
     @include align-center(100%, 100vh, column);
     gap: 2rem;
+    padding: 60px 0px;
 
     p {
         color: var(--text-color);
+        text-align: center;
+
+        @include respond-to("md") {
+            text-align: left;
+        }
     }
 
     &__top_text {
@@ -15,15 +21,30 @@
     }
 
     &__grid {
-        display: grid;
-        grid-template-columns: repeat(3, 100fr);
-        gap: 2rem;
-        grid-template-rows: repeat(2, 100fr);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        @include respond-to("md") {
+            display: grid;
+            grid-template-columns: repeat(3, 100fr);
+            gap: 2rem;
+            grid-template-rows: repeat(2, 100fr);
+        }
 
         div {
             h4 {
-                font-size: 1.6rem;
+                font-size: 1.2rem;
                 font-weight: 600;
+                padding-bottom: 10px;
+                text-align: center;
+                
+                @include respond-to("md") {
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    text-align: left;
+                    
+                }
             }
         }
     }
@@ -45,6 +66,10 @@
         h2 {
             padding-bottom: 20px;
             font-weight: 600;
+            text-align: center;
+            @include respond-to("md") {
+                text-align: left;
+            }
         }
     }
 }

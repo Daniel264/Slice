@@ -209,11 +209,39 @@
     font-display: swap;
     font-style: normal;
 }
+@font-face {
+    font-family: "Neue Montreal";
+    src: url("../fonts/NeueMontreal-Light.otf");
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Bold";
+    src: url("../fonts/NeueMontreal-Bold.otf");
+    font-weight: 600 800;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Regular";
+    src: url("../fonts/NeueMontreal-Regular.otf");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Medium";
+    src: url("../fonts/NeueMontreal-Medium.otf");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
 
 @layer base {
     /* Specify default font below */
     html {
-        font-family: "Manrope", "Neue Haas Display", "Segoe UI Regular", "Satoshi-Variable", sans-serif;
+        font-family: "Manrope",  "Neue Montreal Medium", "Neue Haas Display", "Segoe UI Regular", "Satoshi-Variable", sans-serif;
     }
 
     h1 {
