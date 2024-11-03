@@ -1,12 +1,25 @@
 @use "../variable/variable" as var;
+@use "../mixins/mixins" as mix;
 
 .number-counter-component {
-    // &__container {
     // }
     &__number-display {
-        font-size: var.$text-6xl;
+        font-size: var.$text-3xl;
         font-weight: 600;
         color: #000000;
+
+        @include mix.respond-to("sm") {
+            font-size: var.$text-5xl;
+            font-weight: 600;
+            color: #000000;
+        }
+        @include mix.respond-to("md") {
+            font-size: var.$text-6xl;
+            font-weight: 600;
+            color: #000000;
+        }
+
+
         // animation: counter 5s infinite alternate ease-in-out;
         // counter-reset: num var(--num);
         // font: 800 40px Manrope, sans-serif;

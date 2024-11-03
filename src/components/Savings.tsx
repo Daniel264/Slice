@@ -21,6 +21,16 @@ const AlignText = styled.div`
 
 const H2Text = styled.h2`
     font-weight: 600;
+    font-size: 2.15rem;
+    line-height: 1.3;
+
+
+    @media screen and (min-width: 540px) {
+        font-size: 2.5rem;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 3.3rem;
+    }
 `;
 
 const SavingsWrapper = styled.section`
