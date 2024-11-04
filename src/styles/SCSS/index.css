@@ -526,7 +526,7 @@
   margin-bottom: 20px;
 }
 .range-component div:nth-of-type(1) p {
-  text-align: center;
+  text-align: left;
   width: 82vw;
 }
 @media (min-width: 576px) {
@@ -555,10 +555,13 @@
     width: 600px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 540px) {
   .range-component div:nth-of-type(2) {
     width: 330px;
   }
+}
+.range-component__text {
+  text-align: left;
 }
 
 .benefits-card {

@@ -24,7 +24,7 @@
         }
 
         p {
-            text-align: center;
+            text-align: left;
             width: 82vw;
 
             @include respond-to("sm") {
@@ -46,8 +46,12 @@
         @media screen and (max-width: 1024px) {
             width: 600px;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 540px) {
             width: 330px;
         }
+    }
+
+    &__text {
+        text-align: left;
     }
 }
