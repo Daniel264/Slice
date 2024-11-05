@@ -21,14 +21,14 @@ export const CompaniesCarousel = () => {
             <div>
                 {firstDuplicatedArray.map((company: { image: string | undefined; title: string | undefined }, index: Key | null | undefined) => (
                     <div key={index}>
-                        <img src={company.image} alt={company.title} />
+                        <Image src={company.image ?? '/default-image.png'} width={100} height={100} alt={company.title ?? 'Company logo'} />
                     </div>
                 ))}
             </div>
             <div>
                 {secondDuplicatedArray.map((company: { image: string | undefined; title: string | undefined }, index: Key | null | undefined) => (
                     <div key={index}>
-                        <img src={company.image} alt={company.title} />
+                        <Image width={100} height={100} src={company.image ?? '/default-image.png'} alt={company.title ?? 'Company logo'} />
                     </div>
                 ))}
             </div>
