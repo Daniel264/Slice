@@ -12,12 +12,27 @@ const StyledSpan = styled.span`
     // padding-right: 10px;
 `;
 
+const SmallBreak = styled.br`
+  @media screen and (min-width: 768px){
+    display: none;
+  }
+`
+
 const AlignText = styled.div`
     text-align: left;
     width: 10%;
     justify-content: start;
     display: flex;
 `;
+
+const MainParagraph = styled.p`
+  width: 30vw;
+  text-align: left;
+
+  @media screen and (max-width:768px) {
+    width: 67vw;
+  }
+`
 
 const H2Text = styled.h2`
     font-weight: 600;
@@ -48,10 +63,11 @@ const SavingsWrapper = styled.section`
     article {
         h1 {
         @media screen and (max-width: 768px) {
-        
+
         font-size: 2.5rem;
         }
     }
+  }
 `;
 
 const Savings = () => {
@@ -68,11 +84,11 @@ const Savings = () => {
                     <StyledSpan>Optimise your return rate</StyledSpan> and retain more of your income
                 </H2Text>
 
-                <p>
-                    Secure premium profits. We seamlessly provide you <br /> with the highest returns. Keep up to an extra <br /> 17.6% after taxes. some of your earnings could <br /> be exempt from local and city taxes.
-                </p>
+                <MainParagraph>
+                    Secure premium profits. We seamlessly provide you with the highest returns. Keep up to an extra  17.6% after taxes. some of your earnings could be exempt from local and city taxes.
+                </MainParagraph>
             </article>
-            {/* 
+            {/*
             {isVisible && ( */}
             <article ref={ref}>
                 {numbercounter.map((item) => (

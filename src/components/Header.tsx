@@ -9,7 +9,7 @@ const Header = () => {
             <div aria-label="Splice logo" className="header-logo">
                 <Image src={"/assets/logo/logo.svg"} alt={"Image of splice logo"} width={140} height={120} />
                 <div className="header-middle">
-                    <ul aria-label="A header navigation">
+                    <ul aria-label="A header navigation.">
                         {Head.map((item, index) => (
                             <div key={index}>
                                 <li>{item.name}</li>

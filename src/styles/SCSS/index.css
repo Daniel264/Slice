@@ -841,6 +841,7 @@ h5 {
 .savings-wrapper p {
   color: var(--text-color);
   font-size: 0.85rem;
+  text-align: left;
 }
 @media (min-width: 576px) {
   .savings-wrapper p {
