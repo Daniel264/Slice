@@ -19,7 +19,7 @@ export default function Home() {
         <SmoothScrolling>
             <SEO title="Slice  -  Real estate investment website" />
 
-            <main className="flex min-h-screen flex-col items-center px-5">
+            <main className="flex min-h-screen flex-col items-center px-5 bg-white text-black">
                 {/* <div className="m-auto w-full max-w-8xl"> */}
 
                 {/* <h3 className="my-5 text-5xl font-semibold">Splice</h3> */}

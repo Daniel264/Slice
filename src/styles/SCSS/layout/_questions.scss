@@ -1,75 +1,76 @@
-@use "../mixins/mixins" as *;
-@use "../variable/variable" as var;
+@use "../mixins/mixins"as *;
+@use "../variable/variable"as var;
 
 .questions_section {
-    @include align-center(100%, 100vh, column);
-    gap: 2rem;
-    padding: 60px 0px;
+  @include align-center(100%, 100vh, column);
+  gap: 2rem;
+  padding: 60px 0px;
 
-    p {
-        color: var(--text-color);
+  p {
+    color: var(--text-color);
+    text-align: center;
+
+    @include respond-to("md") {
+      text-align: left;
+    }
+  }
+
+  &__top_text {
+    font-size: var.$text-2xl;
+    padding-bottom: 40px;
+  }
+
+  &__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include respond-to("md") {
+      display: grid;
+      grid-template-columns: repeat(3, 100fr);
+      gap: 2rem;
+      grid-template-rows: repeat(2, 100fr);
+    }
+
+    div {
+      h4 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding-bottom: 10px;
         text-align: center;
 
         @include respond-to("md") {
-            text-align: left;
+          font-size: 1.6rem;
+          font-weight: 600;
+          text-align: left;
+
         }
+      }
+    }
+  }
+
+  &__lower-container {
+    @include align-center(100%, fit-content, column);
+    background: var(--section-color);
+    gap: 30px;
+    padding: 45px;
+    border-radius: 2rem;
+
+    @include respond-to("md") {
+      @include align-center(90%, fit-content, row);
+      justify-content: space-between;
+      gap: 0px;
+
     }
 
-    &__top_text {
-        font-size: var.$text-2xl;
-        padding-bottom: 40px;
+    h2 {
+      padding-bottom: 20px;
+      font-weight: 600;
+      text-align: center;
+
+      @include respond-to("md") {
+        text-align: left;
+      }
     }
-
-    &__grid {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        
-        @include respond-to("md") {
-            display: grid;
-            grid-template-columns: repeat(3, 100fr);
-            gap: 2rem;
-            grid-template-rows: repeat(2, 100fr);
-        }
-
-        div {
-            h4 {
-                font-size: 1.2rem;
-                font-weight: 600;
-                padding-bottom: 10px;
-                text-align: center;
-                
-                @include respond-to("md") {
-                    font-size: 1.6rem;
-                    font-weight: 600;
-                    text-align: left;
-                    
-                }
-            }
-        }
-    }
-
-    &__lower-container {
-        @include align-center(100%, fit-content, column);
-        background: var(--section-color);
-        gap: 30px;
-        padding: 45px;
-        border-radius: 2rem;
-
-        @include respond-to("md") {
-            @include align-center(90%, fit-content, row);
-            justify-content: space-between;
-            gap: 0px;
-
-        }
-
-        h2 {
-            padding-bottom: 20px;
-            font-weight: 600;
-            text-align: center;
-            @include respond-to("md") {
-                text-align: left;
-            }
-        }
-    }
+  }
 }
