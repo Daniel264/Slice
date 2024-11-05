@@ -17,7 +17,7 @@ import { tickText, works } from "@/utilities/yellow-text";
 export default function Home() {
     return (
         <SmoothScrolling>
-            <SEO title="Slice: Fintech website" />
+            <SEO title="Slice  -  Real estate investment website" />
 
             <main className="flex min-h-screen flex-col items-center px-5">
                 {/* <div className="m-auto w-full max-w-8xl"> */}
