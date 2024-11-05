@@ -29,6 +29,13 @@ const StyledInputText = styled.span`
     display: flex;
     font-weight: 800;
     color: #000;
+
+    @media screen and (max-width: 768px) {
+        padding-right: 0rem;
+        font-size: 0.75rem;
+        margin-right: -4rem;
+        margin-left: -4rem;
+    }
 `;
 
 const StyledRange = styled.input`
@@ -69,7 +76,14 @@ const DollarTag = styled.span`
     color: #d7d9ce;
     font-size: 5rem;
     font-weight: 700;
-    padding-left: 0rem;
+    padding-left: 34px;
+
+    @media screen and (max-width: 768px) {
+        padding-left: 153px;
+    }
+    @media screen and (max-width: 540px) {
+        padding-left: 120px;
+    }
 `;
 const PlaceHolder = styled.section`
     width: 100%;
@@ -77,6 +91,10 @@ const PlaceHolder = styled.section`
     justify-content: center;
     display: flex;
     flex-direction: row;
+
+    @media screen and (max-width: 768px) {
+        justify-content: flex-end;
+    }
 `;
 const LowerPlaceHolder = styled.section`
     width: 100%;
@@ -98,6 +116,13 @@ const HigherPlaceHolder = styled.section`
     display: flex;
     flex-direction: row;
 `;
+
+const LineBreak = styled.br`
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+`;
+
 const RangeSlider: React.FC = () => {
     const [value, setValue] = useState<number>(50);
 
@@ -114,7 +139,9 @@ const RangeSlider: React.FC = () => {
             </HigherPlaceHolder>
             <StyledRange type="range" min={0} max={10000} value={value} onChange={handleChange} className="range-slider rating" />
             <PlaceHolder>
-                <StyledInputText>I tuol interessi dopo 5 anni</StyledInputText>
+                <StyledInputText>
+                    I tuol interessi <LineBreak /> dopo 5 anni
+                </StyledInputText>
                 <DollarTag>$</DollarTag>
                 <StyledInput type="number" value={value} onChange={handleChange} />
             </PlaceHolder>
