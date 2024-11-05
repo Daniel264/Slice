@@ -124,7 +124,7 @@ const LineBreak = styled.br`
 `;
 
 const RangeSlider: React.FC = () => {
-    const [value, setValue] = useState<number>(50);
+    const [value, setValue] = useState<number>(5000);
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setValue(Number(event.target.value));
