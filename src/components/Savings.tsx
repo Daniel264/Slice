@@ -1,15 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import NumberCounter from "./NumberCounter";
 import { numbercounter } from "@/utilities/number-counter";
-import IntersectionObserver from "./IntersectionObserver";
 import { Badge } from "./Badge";
 
 const StyledSpan = styled.span`
     color: #737373;
     display: block;
     text-align: left;
-    // padding-right: 10px;
 `;
 
 const SmallBreak = styled.br`
@@ -71,7 +69,6 @@ const SavingsWrapper = styled.section`
 `;
 
 const Savings = () => {
-    const [ref, isVisible] = IntersectionObserver({ threshold: 0 });
     return (
         <SavingsWrapper data-section="quatre" className="savings-wrapper">
             <AlignText>
@@ -90,7 +87,7 @@ const Savings = () => {
             </article>
             {/*
             {isVisible && ( */}
-            <article ref={ref}>
+            <article>
                 {numbercounter.map((item) => (
                     <NumberCounter key={item.id} id={0} number={item.number} sign={item.sign} text={item.text} />
                 ))}
