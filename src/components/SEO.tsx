@@ -22,7 +22,7 @@ export default function SEO({ icon, title, keywords, description, image }: SEOPr
         title: title,
         keywords: keywords || "",
         description: description || DEFAULT_DESCRIPTION,
-        image: SITE_BASE_URL + (image || "/assets/images/splice.png"),
+        image: SITE_BASE_URL + (image || "/assets/images/custom-logo.png"),
         url: SITE_BASE_URL + router.pathname,
     };
 

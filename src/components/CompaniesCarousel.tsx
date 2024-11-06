@@ -10,7 +10,7 @@ export const CompaniesCarousel = () => {
     const secondDuplicatedArray = [...SecondCarousel(), ...SecondCarousel(), ...SecondCarousel(), ...SecondCarousel()];
     return (
         <div
-            aria-label="A company carousel animation"
+            aria-label="A company carousel animation."
             className="companies-description"
             style={{
                 maskImage: "linear-gradient(to right, rgba(0, 0, 0, 0) 15%, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0) 85%)",
