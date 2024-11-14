@@ -16,7 +16,7 @@ export const SecondHero = () => {
                 <Badge data-scroll>How does it work</Badge>
             </div>
             <div data-scroll-section className="second-hero__header">
-                <Image className="straight-image" src={"/assets/images/Second-hero-img.svg"} alt={""} height={90} width={300} />
+                <Image className="straight-image" src={"/assets/images/second-hero-img.svg"} alt={"Image of the second line-through"} height={90} width={300} />
                 <h1 data-scroll data-scroll-speed="1" className="second-hero__header-text">
                     Invest in income-generating <br /> real estate easily
                 </h1>
